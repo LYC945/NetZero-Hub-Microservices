@@ -1,0 +1,23 @@
+{
+    "case_id": "case-f10187fd6c44",
+    "status": "OK",
+    "item": "old AA battery",
+    "matchedItem": "household battery",
+    "matchConfidence": 0.9,
+    "category": "COMMUNITY_RECYCLING_CENTRE",
+    "proposedDisposal": "Community Recycling Centre",
+    "disposalMethod": "Take to a Community Recycling Centre (free).",
+    "instructions": [
+        "Tape the terminals; never put batteries in any kerbside bin (fire risk)."
+    ],
+    "specialInstructions": [
+        "Hazardous item: never place it in a kerbside bin."
+    ],
+    "location": {
+        "postcode": "2519",
+        "council": "Wollongong City Council",
+        "rules": "local council rules"
+    },
+    "data_note": "Illustrative sorting rules for the CSCI927 prototype; check your council for official rules.",
+    "generated_at": "2026-10-19T08:54:39+00:00"
+}

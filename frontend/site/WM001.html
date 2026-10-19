@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetZero Hub – Waste Collection Schedule</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+ <div class="page">
+ <div class="login-container">
+
+        <!-- Logo -->
+        <div class="brand-logo">
+            <center><img src="img/logo.png" alt="Company Logo" height="100"></center>
+        </div>
+
+        <!-- Content Area -->
+        <div class="login-content">
+            <h2>Waste Collection Schedule Service</h2>
+            <p class="subtitle">Never miss a collection again.</p>
+
+            <!-- WMA001: residential address or postcode + notification setting (Part A inputs) -->
+            <form id="scheduleForm" autocomplete="off">
+                <div class="form-grid">
+                    <div class="full">
+                        <label for="location">Residential address or postcode</label>
+                        <input type="text" id="location" placeholder="e.g. 12 Main St, Blacktown NSW 2148" required>
+                    </div>
+                    <div>
+                        <label for="weeks">Show</label>
+                        <select id="weeks">
+                            <option value="4">Next 4 weeks</option>
+                            <option value="8">Next 8 weeks</option>
+                            <option value="12">Next 12 weeks</option>
+                        </select>
+                    </div>
+                    <div class="check" style="align-self:end;padding-bottom:10px">
+                        <input type="checkbox" id="notify" checked>
+                        <label for="notify">Remind me the night before</label>
+                    </div>
+                </div>
+                <div class="examples">
+                    <button type="button" class="chip-btn" data-v="2500">2500 Wollongong</button>
+                    <button type="button" class="chip-btn" data-v="Blacktown">Blacktown</button>
+                    <button type="button" class="chip-btn" data-v="2519">2519 Fairy Meadow</button>
+                    <button type="button" class="chip-btn" data-v="3000">3000 (not covered)</button>
+                    <button type="button" class="chip-btn" data-v="Nowhere Street">no postcode</button>
+                </div>
+                <button type="submit" class="submit-btn" id="go">Get my collection schedule</button>
+            </form>
+
+            <div class="result" id="result"></div>
+
+            <!-- Back navigation link styled identically to a primary button -->
+            <a href="homepage.html" class="back-link">← Change Service Selection</a>
+        </div>
+    </div>
+ </div>
+
+    <script src="app.js"></script>
+    <script>
+        const BIN = { "General waste": "red", "Recycling": "yellow", "Garden organics": "green" };
+        const fmt = d => new Date(d + "T00:00:00").toLocaleDateString("en-AU", { weekday: "short", day: "numeric", month: "short", year: "numeric" });
+        const out = document.getElementById("result");
+
+        document.querySelectorAll(".chip-btn").forEach(b => b.addEventListener("click", () => {
+            document.getElementById("location").value = b.dataset.v;
+            document.getElementById("scheduleForm").requestSubmit();
+        }));
+
+        document.getElementById("scheduleForm").addEventListener("submit", async e => {
+            e.preventDefault();
+            const btn = document.getElementById("go");
+            Hub.setBusy(btn, true, "Get my collection schedule");
+            const q = new URLSearchParams({
+                location: document.getElementById("location").value,
+                notifications: document.getElementById("notify").checked,
+                weeks: document.getElementById("weeks").value,
+            });
+            const r = await Hub.api("GET", "/wma001/schedule?" + q);
+            Hub.setBusy(btn, false, "Get my collection schedule");
+            const d = r.data || {};
+
+            if (r.ok) {
+                const loc = d.location;
+                let h = `<div class="card ok"><h3>${Hub.esc(loc.suburb)} ${Hub.esc(loc.postcode)}</h3>${Hub.esc(loc.council)}</div>`;
+                if (d.upcoming_changes.length) {
+                    h += `<div class="card warn"><h3>Upcoming changes</h3><ul>` + d.upcoming_changes.map(c =>
+                        `<li>${fmt(c.original_date)} → <b>${fmt(c.new_date)}</b>: ${Hub.esc(c.reason)}</li>`).join("") + `</ul></div>`;
+                }
+                h += `<div class="card"><h3>Collection dates</h3><ul class="dates">` + d.collections.map(c =>
+                    `<li><span>${fmt(c.date)}${c.changed ? '<span class="changed">changed</span>' : ""}</span>
+                     <span class="bins">${c.bins.map(b => `<span class="bin ${BIN[b] || "grey"}">${Hub.esc(b)}</span>`).join("")}</span></li>`).join("") + `</ul></div>`;
+                if (d.notifications.enabled && d.notifications.reminders.length) {
+                    const rm = d.notifications.reminders[0];
+                    h += `<div class="card"><h3>🔔 Reminder set</h3>${Hub.esc(rm.message)}<div class="hint">Sent ${Hub.esc(rm.send_at.replace("T", " ").slice(0, 16))} by ${Hub.esc(rm.channel)}</div></div>`;
+                }
+                h += `<div class="card"><h3>Bin instructions</h3><ul>` + d.bin_instructions.map(i =>
+                    `<li><b>${Hub.esc(i.bin)}:</b> ${Hub.esc(i.instruction)}</li>`).join("") + `</ul>
+                    <div class="hint">${Hub.esc(d.data_note)}</div></div>`;
+                out.innerHTML = h + Hub.meta(r);
+            } else if (d.notification) {
+                // XOR else-branch of the Part B process: WarningNotif instead of a schedule
+                out.innerHTML = `<div class="card warn"><h3>⚠ ${Hub.esc(d.notification.message)}</h3>${Hub.esc(d.notification.reason)}</div>` + Hub.meta(r);
+            } else {
+                out.innerHTML = `<div class="card err"><h3>Request failed</h3>${Hub.esc(JSON.stringify(d.detail || "No answer from WMA001"))}</div>` + Hub.meta(r);
+            }
+        });
+    </script>
+</body>
+</html>

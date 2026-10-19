@@ -1,0 +1,294 @@
+case_id,activity,timestamp,service,resource,outcome,detail
+case-59382495a2c8,Receive waste item query,2026-10-19T08:54:15.917+00:00,WMA002,WMA Sorting System,ok,plastic bottle
+case-59382495a2c8,Validate location,2026-10-19T08:54:15.918+00:00,WMA002,WMA Sorting System,local,2500
+case-59382495a2c8,Match item to waste category,2026-10-19T08:54:15.918+00:00,WMA002,WMA Sorting System,matched,plastic bottle
+case-59382495a2c8,Apply local disposal regulations,2026-10-19T08:54:15.918+00:00,WMA002,WMA Sorting System,state-default,CONTAINER_DEPOSIT
+case-59382495a2c8,Return disposal method to NetZero Hub,2026-10-19T08:54:15.920+00:00,WMA002,WMA Sorting System,ok,CONTAINER_DEPOSIT
+case-a9d743ebc7d9,Receive waste item query,2026-10-19T08:54:15.930+00:00,WMA002,WMA Sorting System,ok,banana peel
+case-a9d743ebc7d9,Validate location,2026-10-19T08:54:15.930+00:00,WMA002,WMA Sorting System,local,2500
+case-a9d743ebc7d9,Match item to waste category,2026-10-19T08:54:15.930+00:00,WMA002,WMA Sorting System,matched,food scraps
+case-a9d743ebc7d9,Apply local disposal regulations,2026-10-19T08:54:15.930+00:00,WMA002,WMA Sorting System,local,FOOD_ORGANICS
+case-a9d743ebc7d9,Return disposal method to NetZero Hub,2026-10-19T08:54:15.932+00:00,WMA002,WMA Sorting System,ok,FOOD_ORGANICS
+case-c1cd47bc3049,Receive waste item query,2026-10-19T08:54:15.942+00:00,WMA002,WMA Sorting System,ok,food scraps
+case-c1cd47bc3049,Validate location,2026-10-19T08:54:15.942+00:00,WMA002,WMA Sorting System,local,2148
+case-c1cd47bc3049,Match item to waste category,2026-10-19T08:54:15.942+00:00,WMA002,WMA Sorting System,matched,food scraps
+case-c1cd47bc3049,Apply local disposal regulations,2026-10-19T08:54:15.942+00:00,WMA002,WMA Sorting System,local,GENERAL_WASTE
+case-c1cd47bc3049,Return disposal method to NetZero Hub,2026-10-19T08:54:15.944+00:00,WMA002,WMA Sorting System,ok,GENERAL_WASTE
+case-3b040f840286,Receive waste item query,2026-10-19T08:54:15.953+00:00,WMA002,WMA Sorting System,ok,old AA battery
+case-3b040f840286,Validate location,2026-10-19T08:54:15.954+00:00,WMA002,WMA Sorting System,local,2519
+case-3b040f840286,Match item to waste category,2026-10-19T08:54:15.956+00:00,WMA002,WMA Sorting System,matched,household battery
+case-3b040f840286,Apply local disposal regulations,2026-10-19T08:54:15.956+00:00,WMA002,WMA Sorting System,state-default,COMMUNITY_RECYCLING_CENTRE
+case-3b040f840286,Return disposal method to NetZero Hub,2026-10-19T08:54:15.957+00:00,WMA002,WMA Sorting System,ok,COMMUNITY_RECYCLING_CENTRE
+case-2a1bc2c69aff,Receive waste item query,2026-10-19T08:54:15.973+00:00,WMA002,WMA Sorting System,ok,cardbord box
+case-2a1bc2c69aff,Validate location,2026-10-19T08:54:15.973+00:00,WMA002,WMA Sorting System,local,2500
+case-2a1bc2c69aff,Match item to waste category,2026-10-19T08:54:15.974+00:00,WMA002,WMA Sorting System,matched,cardboard box
+case-2a1bc2c69aff,Apply local disposal regulations,2026-10-19T08:54:15.974+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-2a1bc2c69aff,Return disposal method to NetZero Hub,2026-10-19T08:54:15.976+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-07981fc5e4b2,Receive waste item query,2026-10-19T08:54:15.989+00:00,WMA002,WMA Sorting System,ok,quantum flux
+case-07981fc5e4b2,Validate location,2026-10-19T08:54:15.990+00:00,WMA002,WMA Sorting System,local,2500
+case-07981fc5e4b2,Match item to waste category,2026-10-19T08:54:15.990+00:00,WMA002,WMA Sorting System,unrecognised,quantum flux
+case-cc85f0f28fa9,Receive waste item query,2026-10-19T08:54:16.005+00:00,WMA002,WMA Sorting System,ok,newspaper
+case-cc85f0f28fa9,Validate location,2026-10-19T08:54:16.005+00:00,WMA002,WMA Sorting System,invalid,home
+case-journey-1792400056,Receive waste item query,2026-10-19T08:54:16.031+00:00,WMA002,WMA Sorting System,ok,pizza box
+case-journey-1792400056,Validate location,2026-10-19T08:54:16.032+00:00,WMA002,WMA Sorting System,local,2500
+case-journey-1792400056,Match item to waste category,2026-10-19T08:54:16.032+00:00,WMA002,WMA Sorting System,matched,pizza box
+case-journey-1792400056,Apply local disposal regulations,2026-10-19T08:54:16.032+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-journey-1792400056,Return disposal method to NetZero Hub,2026-10-19T08:54:16.034+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-66211250af94,Receive waste item query,2026-10-19T08:54:18.177+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-66211250af94,Validate location,2026-10-19T08:54:18.177+00:00,WMA002,WMA Sorting System,local,2150
+case-66211250af94,Match item to waste category,2026-10-19T08:54:18.178+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-66211250af94,Apply local disposal regulations,2026-10-19T08:54:18.178+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-66211250af94,Return disposal method to NetZero Hub,2026-10-19T08:54:18.179+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-fcbcee5c6ec5,Receive waste item query,2026-10-19T08:54:18.195+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-fcbcee5c6ec5,Validate location,2026-10-19T08:54:18.196+00:00,WMA002,WMA Sorting System,local,2150
+case-fcbcee5c6ec5,Match item to waste category,2026-10-19T08:54:18.196+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-fcbcee5c6ec5,Apply local disposal regulations,2026-10-19T08:54:18.196+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-fcbcee5c6ec5,Return disposal method to NetZero Hub,2026-10-19T08:54:18.197+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-f0a907abc1be,Receive waste item query,2026-10-19T08:54:18.207+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-f0a907abc1be,Validate location,2026-10-19T08:54:18.207+00:00,WMA002,WMA Sorting System,local,2150
+case-f0a907abc1be,Match item to waste category,2026-10-19T08:54:18.207+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-f0a907abc1be,Apply local disposal regulations,2026-10-19T08:54:18.207+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-f0a907abc1be,Return disposal method to NetZero Hub,2026-10-19T08:54:18.209+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-56569b52a485,Receive waste item query,2026-10-19T08:54:18.218+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-56569b52a485,Validate location,2026-10-19T08:54:18.218+00:00,WMA002,WMA Sorting System,local,2150
+case-56569b52a485,Match item to waste category,2026-10-19T08:54:18.218+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-56569b52a485,Apply local disposal regulations,2026-10-19T08:54:18.218+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-56569b52a485,Return disposal method to NetZero Hub,2026-10-19T08:54:18.220+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-3545757eaf3b,Receive waste item query,2026-10-19T08:54:18.226+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-3545757eaf3b,Validate location,2026-10-19T08:54:18.226+00:00,WMA002,WMA Sorting System,local,2150
+case-3545757eaf3b,Match item to waste category,2026-10-19T08:54:18.226+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-3545757eaf3b,Apply local disposal regulations,2026-10-19T08:54:18.226+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-3545757eaf3b,Return disposal method to NetZero Hub,2026-10-19T08:54:18.227+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-362075ad1bb5,Receive waste item query,2026-10-19T08:54:18.240+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-362075ad1bb5,Validate location,2026-10-19T08:54:18.240+00:00,WMA002,WMA Sorting System,local,2150
+case-362075ad1bb5,Match item to waste category,2026-10-19T08:54:18.240+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-362075ad1bb5,Apply local disposal regulations,2026-10-19T08:54:18.240+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-362075ad1bb5,Return disposal method to NetZero Hub,2026-10-19T08:54:18.242+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-4bd52f0da03a,Receive waste item query,2026-10-19T08:54:18.252+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-4bd52f0da03a,Validate location,2026-10-19T08:54:18.252+00:00,WMA002,WMA Sorting System,local,2150
+case-4bd52f0da03a,Match item to waste category,2026-10-19T08:54:18.252+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-4bd52f0da03a,Apply local disposal regulations,2026-10-19T08:54:18.252+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-4bd52f0da03a,Return disposal method to NetZero Hub,2026-10-19T08:54:18.254+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-a3c5b6fee27a,Receive waste item query,2026-10-19T08:54:18.266+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-a3c5b6fee27a,Validate location,2026-10-19T08:54:18.266+00:00,WMA002,WMA Sorting System,local,2150
+case-a3c5b6fee27a,Match item to waste category,2026-10-19T08:54:18.267+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-a3c5b6fee27a,Apply local disposal regulations,2026-10-19T08:54:18.267+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-a3c5b6fee27a,Return disposal method to NetZero Hub,2026-10-19T08:54:18.268+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-59d16c27139e,Receive waste item query,2026-10-19T08:54:18.280+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-59d16c27139e,Validate location,2026-10-19T08:54:18.280+00:00,WMA002,WMA Sorting System,local,2150
+case-59d16c27139e,Match item to waste category,2026-10-19T08:54:18.280+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-59d16c27139e,Apply local disposal regulations,2026-10-19T08:54:18.280+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-59d16c27139e,Return disposal method to NetZero Hub,2026-10-19T08:54:18.281+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-21adacb79be4,Receive waste item query,2026-10-19T08:54:18.292+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-21adacb79be4,Validate location,2026-10-19T08:54:18.293+00:00,WMA002,WMA Sorting System,local,2150
+case-21adacb79be4,Match item to waste category,2026-10-19T08:54:18.293+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-21adacb79be4,Apply local disposal regulations,2026-10-19T08:54:18.293+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-21adacb79be4,Return disposal method to NetZero Hub,2026-10-19T08:54:18.294+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-f12d2df1db55,Receive waste item query,2026-10-19T08:54:18.307+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-f12d2df1db55,Validate location,2026-10-19T08:54:18.307+00:00,WMA002,WMA Sorting System,local,2150
+case-f12d2df1db55,Match item to waste category,2026-10-19T08:54:18.307+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-f12d2df1db55,Apply local disposal regulations,2026-10-19T08:54:18.307+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-f12d2df1db55,Return disposal method to NetZero Hub,2026-10-19T08:54:18.308+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-c98436bf9688,Receive waste item query,2026-10-19T08:54:18.322+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-c98436bf9688,Validate location,2026-10-19T08:54:18.322+00:00,WMA002,WMA Sorting System,local,2150
+case-c98436bf9688,Match item to waste category,2026-10-19T08:54:18.323+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-c98436bf9688,Apply local disposal regulations,2026-10-19T08:54:18.323+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-c98436bf9688,Return disposal method to NetZero Hub,2026-10-19T08:54:18.324+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-942e9c3cb3f3,Receive waste item query,2026-10-19T08:54:18.336+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-942e9c3cb3f3,Validate location,2026-10-19T08:54:18.336+00:00,WMA002,WMA Sorting System,local,2150
+case-942e9c3cb3f3,Match item to waste category,2026-10-19T08:54:18.336+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-942e9c3cb3f3,Apply local disposal regulations,2026-10-19T08:54:18.336+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-942e9c3cb3f3,Return disposal method to NetZero Hub,2026-10-19T08:54:18.338+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-7c7a49423a8a,Receive waste item query,2026-10-19T08:54:18.348+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-7c7a49423a8a,Validate location,2026-10-19T08:54:18.349+00:00,WMA002,WMA Sorting System,local,2150
+case-7c7a49423a8a,Match item to waste category,2026-10-19T08:54:18.349+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-7c7a49423a8a,Apply local disposal regulations,2026-10-19T08:54:18.349+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-7c7a49423a8a,Return disposal method to NetZero Hub,2026-10-19T08:54:18.351+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-b99f428e9e0c,Receive waste item query,2026-10-19T08:54:18.362+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-b99f428e9e0c,Validate location,2026-10-19T08:54:18.362+00:00,WMA002,WMA Sorting System,local,2150
+case-b99f428e9e0c,Match item to waste category,2026-10-19T08:54:18.362+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-b99f428e9e0c,Apply local disposal regulations,2026-10-19T08:54:18.362+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-b99f428e9e0c,Return disposal method to NetZero Hub,2026-10-19T08:54:18.364+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-098bac760c61,Receive waste item query,2026-10-19T08:54:18.375+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-098bac760c61,Validate location,2026-10-19T08:54:18.375+00:00,WMA002,WMA Sorting System,local,2150
+case-098bac760c61,Match item to waste category,2026-10-19T08:54:18.376+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-098bac760c61,Apply local disposal regulations,2026-10-19T08:54:18.376+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-098bac760c61,Return disposal method to NetZero Hub,2026-10-19T08:54:18.379+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-3aa0f191c43a,Receive waste item query,2026-10-19T08:54:18.389+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-3aa0f191c43a,Validate location,2026-10-19T08:54:18.389+00:00,WMA002,WMA Sorting System,local,2150
+case-3aa0f191c43a,Match item to waste category,2026-10-19T08:54:18.389+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-3aa0f191c43a,Apply local disposal regulations,2026-10-19T08:54:18.389+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-3aa0f191c43a,Return disposal method to NetZero Hub,2026-10-19T08:54:18.391+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-0abf5dfa5af2,Receive waste item query,2026-10-19T08:54:18.401+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-0abf5dfa5af2,Validate location,2026-10-19T08:54:18.402+00:00,WMA002,WMA Sorting System,local,2150
+case-0abf5dfa5af2,Match item to waste category,2026-10-19T08:54:18.402+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-0abf5dfa5af2,Apply local disposal regulations,2026-10-19T08:54:18.402+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-0abf5dfa5af2,Return disposal method to NetZero Hub,2026-10-19T08:54:18.405+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-096c115fdb6b,Receive waste item query,2026-10-19T08:54:18.418+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-096c115fdb6b,Validate location,2026-10-19T08:54:18.419+00:00,WMA002,WMA Sorting System,local,2150
+case-096c115fdb6b,Match item to waste category,2026-10-19T08:54:18.419+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-096c115fdb6b,Apply local disposal regulations,2026-10-19T08:54:18.419+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-096c115fdb6b,Return disposal method to NetZero Hub,2026-10-19T08:54:18.422+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-d46494e99ac4,Receive waste item query,2026-10-19T08:54:18.432+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-d46494e99ac4,Validate location,2026-10-19T08:54:18.432+00:00,WMA002,WMA Sorting System,local,2150
+case-d46494e99ac4,Match item to waste category,2026-10-19T08:54:18.433+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-d46494e99ac4,Apply local disposal regulations,2026-10-19T08:54:18.433+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-d46494e99ac4,Return disposal method to NetZero Hub,2026-10-19T08:54:18.435+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-ee7634baa72e,Receive waste item query,2026-10-19T08:54:18.447+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-ee7634baa72e,Validate location,2026-10-19T08:54:18.447+00:00,WMA002,WMA Sorting System,local,2150
+case-ee7634baa72e,Match item to waste category,2026-10-19T08:54:18.447+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-ee7634baa72e,Apply local disposal regulations,2026-10-19T08:54:18.447+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-ee7634baa72e,Return disposal method to NetZero Hub,2026-10-19T08:54:18.450+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-43f47852c6bb,Receive waste item query,2026-10-19T08:54:18.462+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-43f47852c6bb,Validate location,2026-10-19T08:54:18.462+00:00,WMA002,WMA Sorting System,local,2150
+case-43f47852c6bb,Match item to waste category,2026-10-19T08:54:18.463+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-43f47852c6bb,Apply local disposal regulations,2026-10-19T08:54:18.463+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-43f47852c6bb,Return disposal method to NetZero Hub,2026-10-19T08:54:18.466+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-006949843f82,Receive waste item query,2026-10-19T08:54:18.478+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-006949843f82,Validate location,2026-10-19T08:54:18.479+00:00,WMA002,WMA Sorting System,local,2150
+case-006949843f82,Match item to waste category,2026-10-19T08:54:18.479+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-006949843f82,Apply local disposal regulations,2026-10-19T08:54:18.479+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-006949843f82,Return disposal method to NetZero Hub,2026-10-19T08:54:18.482+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-c72968eb4d18,Receive waste item query,2026-10-19T08:54:18.494+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-c72968eb4d18,Validate location,2026-10-19T08:54:18.494+00:00,WMA002,WMA Sorting System,local,2150
+case-c72968eb4d18,Match item to waste category,2026-10-19T08:54:18.494+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-c72968eb4d18,Apply local disposal regulations,2026-10-19T08:54:18.494+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-c72968eb4d18,Return disposal method to NetZero Hub,2026-10-19T08:54:18.498+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-1cc0fc1fc119,Receive waste item query,2026-10-19T08:54:18.508+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-1cc0fc1fc119,Validate location,2026-10-19T08:54:18.508+00:00,WMA002,WMA Sorting System,local,2150
+case-1cc0fc1fc119,Match item to waste category,2026-10-19T08:54:18.508+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-1cc0fc1fc119,Apply local disposal regulations,2026-10-19T08:54:18.508+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-1cc0fc1fc119,Return disposal method to NetZero Hub,2026-10-19T08:54:18.511+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-6e93bace3a39,Receive waste item query,2026-10-19T08:54:18.523+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-6e93bace3a39,Validate location,2026-10-19T08:54:18.523+00:00,WMA002,WMA Sorting System,local,2150
+case-6e93bace3a39,Match item to waste category,2026-10-19T08:54:18.524+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-6e93bace3a39,Apply local disposal regulations,2026-10-19T08:54:18.524+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-6e93bace3a39,Return disposal method to NetZero Hub,2026-10-19T08:54:18.527+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-f3f6f9b4d158,Receive waste item query,2026-10-19T08:54:18.537+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-f3f6f9b4d158,Validate location,2026-10-19T08:54:18.537+00:00,WMA002,WMA Sorting System,local,2150
+case-f3f6f9b4d158,Match item to waste category,2026-10-19T08:54:18.538+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-f3f6f9b4d158,Apply local disposal regulations,2026-10-19T08:54:18.538+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-f3f6f9b4d158,Return disposal method to NetZero Hub,2026-10-19T08:54:18.540+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-ec40d3cb81bd,Receive waste item query,2026-10-19T08:54:18.548+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-ec40d3cb81bd,Validate location,2026-10-19T08:54:18.548+00:00,WMA002,WMA Sorting System,local,2150
+case-ec40d3cb81bd,Match item to waste category,2026-10-19T08:54:18.548+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-ec40d3cb81bd,Apply local disposal regulations,2026-10-19T08:54:18.548+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-ec40d3cb81bd,Return disposal method to NetZero Hub,2026-10-19T08:54:18.552+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-a584d352cb40,Receive waste item query,2026-10-19T08:54:18.563+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-a584d352cb40,Validate location,2026-10-19T08:54:18.564+00:00,WMA002,WMA Sorting System,local,2150
+case-a584d352cb40,Match item to waste category,2026-10-19T08:54:18.564+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-a584d352cb40,Apply local disposal regulations,2026-10-19T08:54:18.564+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-a584d352cb40,Return disposal method to NetZero Hub,2026-10-19T08:54:18.567+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-1f5b1623599c,Receive waste item query,2026-10-19T08:54:18.580+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-1f5b1623599c,Validate location,2026-10-19T08:54:18.581+00:00,WMA002,WMA Sorting System,local,2150
+case-1f5b1623599c,Match item to waste category,2026-10-19T08:54:18.581+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-1f5b1623599c,Apply local disposal regulations,2026-10-19T08:54:18.581+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-1f5b1623599c,Return disposal method to NetZero Hub,2026-10-19T08:54:18.585+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-f073d71ec3f5,Receive waste item query,2026-10-19T08:54:18.600+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-f073d71ec3f5,Validate location,2026-10-19T08:54:18.600+00:00,WMA002,WMA Sorting System,local,2150
+case-f073d71ec3f5,Match item to waste category,2026-10-19T08:54:18.600+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-f073d71ec3f5,Apply local disposal regulations,2026-10-19T08:54:18.600+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-f073d71ec3f5,Return disposal method to NetZero Hub,2026-10-19T08:54:18.603+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-81112accab5a,Receive waste item query,2026-10-19T08:54:18.615+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-81112accab5a,Validate location,2026-10-19T08:54:18.615+00:00,WMA002,WMA Sorting System,local,2150
+case-81112accab5a,Match item to waste category,2026-10-19T08:54:18.615+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-81112accab5a,Apply local disposal regulations,2026-10-19T08:54:18.615+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-81112accab5a,Return disposal method to NetZero Hub,2026-10-19T08:54:18.618+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-8d55c1c7caa2,Receive waste item query,2026-10-19T08:54:18.631+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-8d55c1c7caa2,Validate location,2026-10-19T08:54:18.631+00:00,WMA002,WMA Sorting System,local,2150
+case-8d55c1c7caa2,Match item to waste category,2026-10-19T08:54:18.631+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-8d55c1c7caa2,Apply local disposal regulations,2026-10-19T08:54:18.631+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-8d55c1c7caa2,Return disposal method to NetZero Hub,2026-10-19T08:54:18.634+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-73742deae04a,Receive waste item query,2026-10-19T08:54:18.647+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-73742deae04a,Validate location,2026-10-19T08:54:18.647+00:00,WMA002,WMA Sorting System,local,2150
+case-73742deae04a,Match item to waste category,2026-10-19T08:54:18.648+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-73742deae04a,Apply local disposal regulations,2026-10-19T08:54:18.648+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-73742deae04a,Return disposal method to NetZero Hub,2026-10-19T08:54:18.650+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-5bd39d2d2b29,Receive waste item query,2026-10-19T08:54:18.665+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-5bd39d2d2b29,Validate location,2026-10-19T08:54:18.665+00:00,WMA002,WMA Sorting System,local,2150
+case-5bd39d2d2b29,Match item to waste category,2026-10-19T08:54:18.665+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-5bd39d2d2b29,Apply local disposal regulations,2026-10-19T08:54:18.665+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-5bd39d2d2b29,Return disposal method to NetZero Hub,2026-10-19T08:54:18.668+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-173c13e163fa,Receive waste item query,2026-10-19T08:54:18.680+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-173c13e163fa,Validate location,2026-10-19T08:54:18.680+00:00,WMA002,WMA Sorting System,local,2150
+case-173c13e163fa,Match item to waste category,2026-10-19T08:54:18.681+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-173c13e163fa,Apply local disposal regulations,2026-10-19T08:54:18.681+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-173c13e163fa,Return disposal method to NetZero Hub,2026-10-19T08:54:18.683+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-311243be74b9,Receive waste item query,2026-10-19T08:54:18.695+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-311243be74b9,Validate location,2026-10-19T08:54:18.696+00:00,WMA002,WMA Sorting System,local,2150
+case-311243be74b9,Match item to waste category,2026-10-19T08:54:18.696+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-311243be74b9,Apply local disposal regulations,2026-10-19T08:54:18.696+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-311243be74b9,Return disposal method to NetZero Hub,2026-10-19T08:54:18.698+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-63906bfeecbf,Receive waste item query,2026-10-19T08:54:18.708+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-63906bfeecbf,Validate location,2026-10-19T08:54:18.708+00:00,WMA002,WMA Sorting System,local,2150
+case-63906bfeecbf,Match item to waste category,2026-10-19T08:54:18.708+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-63906bfeecbf,Apply local disposal regulations,2026-10-19T08:54:18.708+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-63906bfeecbf,Return disposal method to NetZero Hub,2026-10-19T08:54:18.710+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-008b9ff87466,Receive waste item query,2026-10-19T08:54:18.721+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-008b9ff87466,Validate location,2026-10-19T08:54:18.722+00:00,WMA002,WMA Sorting System,local,2150
+case-008b9ff87466,Match item to waste category,2026-10-19T08:54:18.722+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-008b9ff87466,Apply local disposal regulations,2026-10-19T08:54:18.722+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-008b9ff87466,Return disposal method to NetZero Hub,2026-10-19T08:54:18.723+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-39732a2080c2,Receive waste item query,2026-10-19T08:54:18.734+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-39732a2080c2,Validate location,2026-10-19T08:54:18.734+00:00,WMA002,WMA Sorting System,local,2150
+case-39732a2080c2,Match item to waste category,2026-10-19T08:54:18.735+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-39732a2080c2,Apply local disposal regulations,2026-10-19T08:54:18.735+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-39732a2080c2,Return disposal method to NetZero Hub,2026-10-19T08:54:18.737+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-a97611b8f0b9,Receive waste item query,2026-10-19T08:54:18.750+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-a97611b8f0b9,Validate location,2026-10-19T08:54:18.750+00:00,WMA002,WMA Sorting System,local,2150
+case-a97611b8f0b9,Match item to waste category,2026-10-19T08:54:18.750+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-a97611b8f0b9,Apply local disposal regulations,2026-10-19T08:54:18.750+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-a97611b8f0b9,Return disposal method to NetZero Hub,2026-10-19T08:54:18.754+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-2ce05fbb4147,Receive waste item query,2026-10-19T08:54:18.766+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-2ce05fbb4147,Validate location,2026-10-19T08:54:18.766+00:00,WMA002,WMA Sorting System,local,2150
+case-2ce05fbb4147,Match item to waste category,2026-10-19T08:54:18.766+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-2ce05fbb4147,Apply local disposal regulations,2026-10-19T08:54:18.766+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-2ce05fbb4147,Return disposal method to NetZero Hub,2026-10-19T08:54:18.770+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-120b4edce468,Receive waste item query,2026-10-19T08:54:18.782+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-120b4edce468,Validate location,2026-10-19T08:54:18.783+00:00,WMA002,WMA Sorting System,local,2150
+case-120b4edce468,Match item to waste category,2026-10-19T08:54:18.783+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-120b4edce468,Apply local disposal regulations,2026-10-19T08:54:18.783+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-120b4edce468,Return disposal method to NetZero Hub,2026-10-19T08:54:18.786+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-0834c7d5ba0d,Receive waste item query,2026-10-19T08:54:18.796+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-0834c7d5ba0d,Validate location,2026-10-19T08:54:18.797+00:00,WMA002,WMA Sorting System,local,2150
+case-0834c7d5ba0d,Match item to waste category,2026-10-19T08:54:18.797+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-0834c7d5ba0d,Apply local disposal regulations,2026-10-19T08:54:18.797+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-0834c7d5ba0d,Return disposal method to NetZero Hub,2026-10-19T08:54:18.799+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-069ed9456b0b,Receive waste item query,2026-10-19T08:54:18.811+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-069ed9456b0b,Validate location,2026-10-19T08:54:18.811+00:00,WMA002,WMA Sorting System,local,2150
+case-069ed9456b0b,Match item to waste category,2026-10-19T08:54:18.811+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-069ed9456b0b,Apply local disposal regulations,2026-10-19T08:54:18.811+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-069ed9456b0b,Return disposal method to NetZero Hub,2026-10-19T08:54:18.814+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-5b2704925b94,Receive waste item query,2026-10-19T08:54:18.826+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-5b2704925b94,Validate location,2026-10-19T08:54:18.826+00:00,WMA002,WMA Sorting System,local,2150
+case-5b2704925b94,Match item to waste category,2026-10-19T08:54:18.826+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-5b2704925b94,Apply local disposal regulations,2026-10-19T08:54:18.826+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-5b2704925b94,Return disposal method to NetZero Hub,2026-10-19T08:54:18.828+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-c875463bf664,Receive waste item query,2026-10-19T08:54:18.839+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-c875463bf664,Validate location,2026-10-19T08:54:18.839+00:00,WMA002,WMA Sorting System,local,2150
+case-c875463bf664,Match item to waste category,2026-10-19T08:54:18.839+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-c875463bf664,Apply local disposal regulations,2026-10-19T08:54:18.839+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-c875463bf664,Return disposal method to NetZero Hub,2026-10-19T08:54:18.841+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-e786a302eaa0,Receive waste item query,2026-10-19T08:54:18.853+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-e786a302eaa0,Validate location,2026-10-19T08:54:18.853+00:00,WMA002,WMA Sorting System,local,2150
+case-e786a302eaa0,Match item to waste category,2026-10-19T08:54:18.853+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-e786a302eaa0,Apply local disposal regulations,2026-10-19T08:54:18.853+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-e786a302eaa0,Return disposal method to NetZero Hub,2026-10-19T08:54:18.855+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-8c810c9db9be,Receive waste item query,2026-10-19T08:54:18.867+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-8c810c9db9be,Validate location,2026-10-19T08:54:18.867+00:00,WMA002,WMA Sorting System,local,2150
+case-8c810c9db9be,Match item to waste category,2026-10-19T08:54:18.867+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-8c810c9db9be,Apply local disposal regulations,2026-10-19T08:54:18.867+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-8c810c9db9be,Return disposal method to NetZero Hub,2026-10-19T08:54:18.869+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-ad3c3287d0bd,Receive waste item query,2026-10-19T08:54:18.880+00:00,WMA002,WMA Sorting System,ok,glass jar
+case-ad3c3287d0bd,Validate location,2026-10-19T08:54:18.881+00:00,WMA002,WMA Sorting System,local,2150
+case-ad3c3287d0bd,Match item to waste category,2026-10-19T08:54:18.881+00:00,WMA002,WMA Sorting System,matched,glass jar
+case-ad3c3287d0bd,Apply local disposal regulations,2026-10-19T08:54:18.881+00:00,WMA002,WMA Sorting System,state-default,RECYCLING
+case-ad3c3287d0bd,Return disposal method to NetZero Hub,2026-10-19T08:54:18.884+00:00,WMA002,WMA Sorting System,ok,RECYCLING
+case-f10187fd6c44,Receive waste item query,2026-10-19T08:54:39.508+00:00,WMA002,WMA Sorting System,ok,old AA battery
+case-f10187fd6c44,Validate location,2026-10-19T08:54:39.509+00:00,WMA002,WMA Sorting System,local,2519
+case-f10187fd6c44,Match item to waste category,2026-10-19T08:54:39.512+00:00,WMA002,WMA Sorting System,matched,household battery
+case-f10187fd6c44,Apply local disposal regulations,2026-10-19T08:54:39.512+00:00,WMA002,WMA Sorting System,state-default,COMMUNITY_RECYCLING_CENTRE
+case-f10187fd6c44,Return disposal method to NetZero Hub,2026-10-19T08:54:39.514+00:00,WMA002,WMA Sorting System,ok,COMMUNITY_RECYCLING_CENTRE
+case-ee3de03af5ab,Receive waste item query,2026-10-19T08:54:39.550+00:00,WMA002,WMA Sorting System,ok,quantum flux
+case-ee3de03af5ab,Validate location,2026-10-19T08:54:39.551+00:00,WMA002,WMA Sorting System,local,2500
+case-ee3de03af5ab,Match item to waste category,2026-10-19T08:54:39.553+00:00,WMA002,WMA Sorting System,unrecognised,quantum flux

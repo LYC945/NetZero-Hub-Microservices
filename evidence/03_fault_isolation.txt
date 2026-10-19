@@ -1,0 +1,17 @@
+== Fault isolation: stop WMA002, the other services keep working ==
+$ docker compose stop wma002-sorting
+ Container netzero-hub-wma002-sorting-1 Stopping 
+ Container netzero-hub-wma002-sorting-1 Stopped 
+/wma001/health   -> HTTP 200
+/ea01/health     -> HTTP 200
+/wma002/health   -> HTTP 502
+
+$ docker compose start wma002-sorting
+ Container netzero-hub-wma002-sorting-1 Starting 
+ Container netzero-hub-wma002-sorting-1 Started 
+/wma001/health   -> HTTP 200
+/ea01/health     -> HTTP 200
+/wma002/health   -> HTTP 200
+
+== Persistence: EA01 history survives a container restart ==
+assessments for u-1001 before restart: 2, after restart: 2

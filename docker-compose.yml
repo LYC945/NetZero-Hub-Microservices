@@ -1,0 +1,51 @@
+name: netzero-hub
+services:
+  wma001-schedule:
+    build: ./services/wma001
+    image: netzero/wma001-schedule:1.0
+    ports: ["${WMA001_PORT:-8001}:8000"]
+    volumes: [wma001-data:/data]
+    networks: [netzero]
+    restart: unless-stopped
+
+  ea01-carbon:
+    build: ./services/ea01
+    image: netzero/ea01-carbon:1.0
+    ports: ["${EA01_PORT:-8002}:8000"]
+    volumes: [ea01-data:/data]
+    networks: [netzero]
+    restart: unless-stopped
+
+  wma002-sorting:
+    build: ./services/wma002
+    image: netzero/wma002-sorting:1.0
+    ports: ["${WMA002_PORT:-8003}:8000"]
+    volumes: [wma002-data:/data]
+    networks: [netzero]
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    image: netzero/frontend:1.0
+    networks: [netzero]
+    restart: unless-stopped
+
+  gateway:
+    image: nginx:1.27-alpine
+    ports: ["${GATEWAY_PORT:-8080}:80"]
+    volumes: ["./gateway/nginx.conf:/etc/nginx/conf.d/default.conf:ro"]
+    networks: [netzero]
+    depends_on:
+      wma001-schedule: {condition: service_healthy}
+      ea01-carbon: {condition: service_healthy}
+      wma002-sorting: {condition: service_healthy}
+      frontend: {condition: service_healthy}
+    restart: unless-stopped
+
+networks:
+  netzero: {}
+
+volumes:
+  wma001-data: {}
+  ea01-data: {}
+  wma002-data: {}

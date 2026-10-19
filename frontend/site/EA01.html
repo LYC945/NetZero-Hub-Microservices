@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetZero Hub – Carbon Footprint</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+ <div class="page">
+ <div class="login-container">
+
+        <!-- Logo -->
+        <div class="brand-logo">
+            <center><img src="img/logo.png" alt="Company Logo" height="100"></center>
+        </div>
+
+        <!-- Content Area -->
+        <div class="login-content">
+            <h2>Carbon Footprint Calculation Service</h2>
+            <p class="subtitle">See the impact of your everyday choices.</p>
+
+            <!-- EA01: CarbonFootprintRequest of Part C -->
+            <form id="cfForm" autocomplete="off">
+                <div class="form-grid">
+                    <div><label for="from">Period from</label><input type="date" id="from" required></div>
+                    <div><label for="to">Period to</label><input type="date" id="to" required></div>
+                    <div class="full">
+                        <label for="kwh">Household electricity (kWh)</label>
+                        <input type="number" id="kwh" min="0" step="any" placeholder="from your bill, e.g. 320">
+                    </div>
+                    <div>
+                        <label for="mode">Main transport mode</label>
+                        <select id="mode">
+                            <option value="PRIVATE_VEHICLE">Private vehicle</option>
+                            <option value="EV">Electric vehicle</option>
+                            <option value="BUS">Bus</option>
+                            <option value="TRAIN">Train</option>
+                        </select>
+                    </div>
+                    <div><label for="km">Distance travelled (km)</label><input type="number" id="km" min="0" step="any" placeholder="e.g. 450"></div>
+                    <div><label for="waste">Waste generated (kg)</label><input type="number" id="waste" min="0" step="any" placeholder="e.g. 40"></div>
+                    <div><label for="recycled">of which recycled (kg)</label><input type="number" id="recycled" min="0" step="any" placeholder="e.g. 15"></div>
+                    <div class="full check">
+                        <input type="checkbox" id="consent" checked>
+                        <label for="consent">I consent to NetZero Hub sharing this activity data with the Environmental Agency</label>
+                    </div>
+                    <div class="full hint">Leave a field empty if you have no data: the result is then marked incomplete instead of guessed.</div>
+                </div>
+                <button type="submit" class="submit-btn" id="go">Calculate my footprint</button>
+            </form>
+
+            <div class="result" id="result"></div>
+            <div class="result" id="history"></div>
+
+            <!-- Back navigation link styled identically to a primary button -->
+            <a href="homepage.html" class="back-link">← Change Service Selection</a>
+        </div>
+    </div>
+ </div>
+
+    <script src="app.js"></script>
+    <script>
+        const $ = id => document.getElementById(id);
+        const num = id => $(id).value === "" ? null : Number($(id).value);
+        // default period: last full calendar month
+        const now = new Date(), first = new Date(now.getFullYear(), now.getMonth() - 1, 1), last = new Date(now.getFullYear(), now.getMonth(), 0);
+        const iso = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+        $("from").value = iso(first); $("to").value = iso(last);
+        ["kwh", "km", "waste", "recycled"].forEach((k, i) => $(k).value = [320, 450, 40, 15][i]);
+
+        async function loadHistory() {
+            const r = await Hub.api("GET", "/ea01/footprints/history/" + encodeURIComponent(Hub.user()));
+            if (!r.ok || !r.data.count) { $("history").innerHTML = ""; return; }
+            $("history").innerHTML = `<div class="card"><h3>Your history (last 24 months)</h3><table class="hist">
+                <tr><th>Period</th><th>Total kg CO2-e</th><th>Status</th><th>Calculated</th></tr>` +
+                r.data.assessments.slice().reverse().map(a => `<tr><td>${a.period_from} – ${a.period_to}</td><td>${a.total.toFixed(1)}</td>
+                <td>${a.status}</td><td>${a.calculated_at.replace("T", " ").slice(0, 16)}</td></tr>`).join("") + `</table></div>`;
+        }
+
+        $("cfForm").addEventListener("submit", async e => {
+            e.preventDefault();
+            Hub.setBusy($("go"), true, "Calculate my footprint");
+            const km = num("km");
+            const body = {
+                userId: Hub.user(), assessmentStartDate: $("from").value, assessmentEndDate: $("to").value,
+                electricityConsumption: num("kwh"), transportMode: km ? $("mode").value : null, travelDistance: km,
+                wasteGenerated: num("waste"), recyclingAmount: num("recycled"), consentGiven: $("consent").checked,
+            };
+            const r = await Hub.api("POST", "/ea01/footprints", body);
+            Hub.setBusy($("go"), false, "Calculate my footprint");
+            const d = r.data || {};
+
+            if (r.ok) {
+                const max = Math.max(...d.emissionBreakdown.map(b => b.emissions), 1);
+                let h = `<div class="card ${d.status === "COMPLETE" ? "ok" : "warn"}">
+                    <div class="big">${d.totalCarbonFootprint.toFixed(2)} <small>kg CO2-e</small>
+                    <span class="badge ${d.status.toLowerCase()}">${d.status}</span></div>
+                    <div class="hint">${d.assessmentPeriod.from} to ${d.assessmentPeriod.to} · factors ${Hub.esc(d.emissionFactorVersion)} · ${Hub.esc(d.assessmentId)}</div>`;
+                h += d.emissionBreakdown.map(b => `<div class="bar-row"><span>${b.category}</span>
+                    <div class="bar"><span style="width:${(100 * b.emissions / max).toFixed(1)}%"></span></div>
+                    <span class="v">${b.emissions.toFixed(2)} (${Math.round(b.share * 100)}%)</span></div>`).join("");
+                if (d.warning) h += `<p style="margin-top:10px;color:#fcd34d">⚠ ${Hub.esc(d.warning)}</p>`;
+                $("result").innerHTML = h + `</div>` + Hub.meta(r);
+                loadHistory();
+            } else if (d.status === "CONSENT_REQUIRED") {
+                $("result").innerHTML = `<div class="card warn"><h3>Consent required</h3>${Hub.esc(d.message)}</div>` + Hub.meta(r);
+            } else if (d.validation) {
+                $("result").innerHTML = `<div class="card err"><h3>Please correct your data</h3><ul>` +
+                    d.validation.errors.map(x => `<li>${Hub.esc(x)}</li>`).join("") + `</ul></div>` + Hub.meta(r);
+            } else {
+                $("result").innerHTML = `<div class="card err"><h3>Request failed</h3>${Hub.esc(JSON.stringify(d.detail || "No answer from EA01"))}</div>` + Hub.meta(r);
+            }
+        });
+        loadHistory();
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+    "case_id": "case-9a8eaeed870d",
+    "assessmentId": "cf-909623a72f",
+    "userId": "u-2002",
+    "assessmentPeriod": {
+        "from": "2026-09-01",
+        "to": "2026-09-30"
+    },
+    "totalCarbonFootprint": 314.95,
+    "energyEmissions": 211.2,
+    "transportEmissions": 85.5,
+    "wasteEmissions": 18.25,
+    "emissionBreakdown": [
+        {
+            "category": "energy",
+            "emissions": 211.2,
+            "share": 0.671
+        },
+        {
+            "category": "transport",
+            "emissions": 85.5,
+            "share": 0.271
+        },
+        {
+            "category": "waste",
+            "emissions": 18.25,
+            "share": 0.058
+        }
+    ],
+    "unit": "kg CO2-e",
+    "calculationTimestamp": "2026-10-19T08:54:39+00:00",
+    "status": "COMPLETE",
+    "missingCategories": [],
+    "emissionFactorVersion": "EF-2026.10-demo"
+}

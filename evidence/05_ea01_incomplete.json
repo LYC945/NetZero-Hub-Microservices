@@ -1,0 +1,33 @@
+{
+    "case_id": "case-466633466914",
+    "assessmentId": "cf-1236c8ead7",
+    "userId": "u-2002",
+    "assessmentPeriod": {
+        "from": "2026-09-01",
+        "to": "2026-09-30"
+    },
+    "totalCarbonFootprint": 211.2,
+    "energyEmissions": 211.2,
+    "transportEmissions": 0.0,
+    "wasteEmissions": null,
+    "emissionBreakdown": [
+        {
+            "category": "energy",
+            "emissions": 211.2,
+            "share": 1.0
+        },
+        {
+            "category": "transport",
+            "emissions": 0.0,
+            "share": 0.0
+        }
+    ],
+    "unit": "kg CO2-e",
+    "calculationTimestamp": "2026-10-19T08:54:39+00:00",
+    "status": "INCOMPLETE",
+    "missingCategories": [
+        "waste"
+    ],
+    "emissionFactorVersion": "EF-2026.10-demo",
+    "warning": "Result is incomplete: no data for waste. Missing data was not estimated."
+}

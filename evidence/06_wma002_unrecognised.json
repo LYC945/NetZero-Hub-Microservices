@@ -1,0 +1,9 @@
+{
+    "case_id": "case-ee3de03af5ab",
+    "status": "ITEM_NOT_RECOGNISED",
+    "message": "The item could not be matched to a waste category. Try a more general name.",
+    "suggestions": [
+        "foam box",
+        "aluminium can"
+    ]
+}

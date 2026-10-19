@@ -1,0 +1,66 @@
+/* Additions for the connected service pages. Keeps the palette of style.css (#091413 / #122421 / #4f46e5). */
+.page { width: 100%; max-width: 680px; }
+.page .brand-logo img { margin: 0 auto; }
+.page .login-container { padding: 32px; }
+
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 16px; margin-bottom: 20px; }
+.form-grid .full { grid-column: 1 / -1; }
+@media (max-width: 560px) { .form-grid { grid-template-columns: 1fr; } }
+
+.form-grid input[type="text"], .form-grid input[type="number"], .form-grid input[type="date"], .form-grid select {
+  width: 100%; padding: 11px 14px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 15px;
+  color: #1f2937; background: #fff; outline: none;
+}
+.form-grid input:focus, .form-grid select:focus { border-color: #4f46e5; box-shadow: 0 0 0 3px rgba(79, 70, 229, .25); }
+.check { display: flex; align-items: center; gap: 8px; }
+.check label { margin: 0; cursor: pointer; }
+.hint { color: #9ca3af; font-size: 12px; margin-top: 4px; }
+.examples { display: flex; flex-wrap: wrap; gap: 6px; margin: -6px 0 18px; }
+.chip-btn { background: rgba(255,255,255,.06); color: #cbd5e1; border: 1px solid rgba(255,255,255,.15);
+  border-radius: 999px; padding: 4px 10px; font-size: 12px; cursor: pointer; }
+.chip-btn:hover { border-color: #818cf8; color: #fff; }
+.submit-btn:disabled { opacity: .6; cursor: wait; }
+.back-link { display: block; text-align: center; margin-top: 14px; color: #9ca3af; font-size: 14px; text-decoration: none; }
+.back-link:hover { color: #fff; }
+
+.result { margin-top: 24px; color: #e5e7eb; font-size: 14px; }
+.result:empty { display: none; }
+.card { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 12px; }
+.card h3 { color: #fff; font-size: 16px; margin-bottom: 8px; }
+.card ul { padding-left: 18px; line-height: 1.6; }
+.warn { border-color: #f59e0b; background: rgba(245, 158, 11, .1); }
+.err { border-color: #ef4444; background: rgba(239, 68, 68, .1); }
+.ok { border-color: #22c55e; background: rgba(34, 197, 94, .08); }
+.badge { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 999px; margin-left: 6px; vertical-align: middle; }
+.badge.complete { background: #14532d; color: #86efac; }
+.badge.incomplete { background: #78350f; color: #fcd34d; }
+
+.dates { list-style: none; padding: 0 !important; }
+.dates li { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,.07); }
+.dates li:last-child { border-bottom: 0; }
+.bins { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+.bin { font-size: 12px; font-weight: 600; padding: 3px 9px; border-radius: 6px; color: #111; }
+.bin.red { background: #f87171; } .bin.yellow { background: #facc15; } .bin.green { background: #4ade80; }
+.bin.blue { background: #60a5fa; } .bin.grey { background: #cbd5e1; } .bin.purple { background: #c4b5fd; }
+.changed { color: #fcd34d; font-size: 12px; margin-left: 6px; }
+
+.big { font-size: 38px; font-weight: 700; color: #fff; }
+.big small { font-size: 15px; color: #9ca3af; font-weight: 500; }
+.bar-row { display: grid; grid-template-columns: 90px 1fr 92px; align-items: center; gap: 10px; margin: 8px 0; }
+.bar { height: 12px; border-radius: 6px; background: rgba(255,255,255,.08); overflow: hidden; }
+.bar > span { display: block; height: 100%; background: #818cf8; }
+.bar-row .v { text-align: right; font-variant-numeric: tabular-nums; }
+table.hist { width: 100%; border-collapse: collapse; font-size: 13px; }
+table.hist th, table.hist td { text-align: left; padding: 6px 4px; border-bottom: 1px solid rgba(255,255,255,.08); }
+table.hist th { color: #9ca3af; font-weight: 600; }
+
+.meta { color: #6b7280; font-size: 12px; margin-top: 6px; text-align: right; }
+.meta.bad { color: #f87171; }
+
+/* homepage: live status of the three microservices */
+.status-strip { display: flex; justify-content: center; gap: 18px; flex-wrap: wrap; margin: -20px 0 28px; color: #9ca3af; font-size: 13px; }
+.dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: #6b7280; margin-right: 6px; vertical-align: middle; }
+.dot.up { background: #22c55e; box-shadow: 0 0 6px #22c55e; } .dot.down { background: #ef4444; }
+.service-card .svc-state { margin-top: 12px; font-size: 12px; color: #9ca3af; }
+.user-line { text-align: center; color: #9ca3af; font-size: 13px; margin-top: 18px; }
+.user-line a { color: #818cf8; }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetZero Hub – Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="services-container">
+        
+        <!-- Logo -->
+        <div class="brand-logo2">
+            <center><img src="img/logo.png" alt="Company Logo"></center>
+        </div>
+
+        <!-- Inner Content Area -->
+        <div class="services-content">
+            <h2>Select a Service</h2>
+            <p class="subtitle">Please choose one of the options below to continue</p>
+            <div class="status-strip" id="statusStrip">
+                <span><span class="dot" id="dot-wma001"></span>WMA001</span>
+                <span><span class="dot" id="dot-ea01"></span>EA01</span>
+                <span><span class="dot" id="dot-wma002"></span>WMA002</span>
+            </div>
+
+            <!-- Services Grid Layer -->
+            <div class="services-grid">
+                
+                <!-- Service Card 1 -->
+                <label class="service-card">
+                    <!-- Note the data-url attributes pointing to target page strings -->
+                    <input type="radio" name="selected_service" value="basic" data-url="WM001.html" checked>
+                    <div class="card-content">
+                        <div class="service-icon">🗑️</div>
+                        <h3>Waste Collection Schedule Service</h3>
+                        <p>This service informs users of their upcoming waste collection dates and tells them which bin to put out on each collection day.</p>
+                        <div class="svc-state" id="state-wma001">checking…</div>
+                    </div>
+                </label>
+
+                <!-- Service Card 2 -->
+                <label class="service-card">
+                    <input type="radio" name="selected_service" value="standard" data-url="EA01.html">
+                    <div class="card-content">
+                        <div class="service-icon">👣</div>
+                        <h3>Carbon Footprint Calculation Service</h3>
+                        <p>This service estimates a user’s carbon footprint so they can understand the environmental impact of their daily activities.</p>
+                        <div class="svc-state" id="state-ea01">checking…</div>
+                    </div>
+                </label>
+
+                <!-- Service Card 3 -->
+                <label class="service-card">
+                    <input type="radio" name="selected_service" value="premium" data-url="WM002.html">
+                    <div class="card-content">
+                        <div class="service-icon">♻️</div>
+                        <h3>Recycling and Waste Sorting</h3>
+                        <p>This service helps users sort their waste correctly into general waste, recycling, or green waste.</p>
+                        <div class="svc-state" id="state-wma002">checking…</div>
+                    </div>
+                </label>
+
+            </div>
+
+            <!-- Action Button -->
+            <button class="continue-btn" id="submitServiceBtn">Continue with Selection</button>
+            <p class="user-line">Signed in as <b id="who"></b> · <a href="login.html">sign out</a></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        // Live health of the three microservices through the gateway (refreshed every 5 s).
+        document.getElementById('who').textContent = Hub.user();
+        async function refreshStatus() {
+            for (const svc of ['wma001', 'ea01', 'wma002']) {
+                const r = await Hub.api('GET', '/' + svc + '/health');
+                const up = r.ok && r.data && r.data.status === 'UP';
+                document.getElementById('dot-' + svc).className = 'dot ' + (up ? 'up' : 'down');
+                document.getElementById('state-' + svc).textContent =
+                    up ? 'Online · ' + r.meta.rtt + ' ms' : 'Offline (HTTP ' + r.status + ')';
+            }
+        }
+        refreshStatus();
+        setInterval(refreshStatus, 5000);
+    </script>
+    <!-- JS for redirection -->
+    <script>
+        document.getElementById('submitServiceBtn').addEventListener('click', function() {
+            // Find the radio button element that is currently checked
+            const selectedRadio = document.querySelector('input[name="selected_service"]:checked');
+            
+            if (selectedRadio) {
+                // Read the destination address mapped inside the custom 'data-url' parameter
+                const targetUrl = selectedRadio.getAttribute('data-url');
+                
+                // Immediately forward the browser destination page
+                window.location.href = targetUrl;
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+{
+    "case_id": "case-c5191bafb30d",
+    "status": "OK",
+    "type": "ScheduleData",
+    "location": {
+        "postcode": "2500",
+        "suburb": "Wollongong",
+        "council": "Wollongong City Council"
+    },
+    "collections": [
+        {
+            "date": "2026-12-22",
+            "weekday": "Tuesday",
+            "bins": [
+                "General waste",
+                "Recycling"
+            ],
+            "changed": false
+        },
+        {
+            "date": "2026-12-29",
+            "weekday": "Tuesday",
+            "bins": [
+                "General waste",
+                "Garden organics"
+            ],
+            "changed": false
+        },
+        {
+            "date": "2027-01-05",
+            "weekday": "Tuesday",
+            "bins": [
+                "General waste",
+                "Garden organics"
+            ],
+            "changed": false
+        },
+        {
+            "date": "2027-01-12",
+            "weekday": "Tuesday",
+            "bins": [
+                "General waste",
+                "Recycling"
+            ],
+            "changed": false
+        }
+    ],
+    "upcoming_changes": [],
+    "bin_instructions": [
+        {
+            "bin": "Garden organics",
+            "instruction": "Green-lid bin. Grass, leaves and small branches; no plastic bags."
+        },
+        {
+            "bin": "General waste",
+            "instruction": "Red-lid bin. Bagged household rubbish that cannot be recycled or composted."
+        },
+        {
+            "bin": "Recycling",
+            "instruction": "Yellow-lid bin. Clean paper, cardboard, glass, rigid plastic and cans, loose (not bagged)."
+        },
+        {
+            "bin": "All bins",
+            "instruction": "Put bins out after 6 pm the night before, lids closed, handles facing the street, 50 cm apart."
+        }
+    ],
+    "notifications": {
+        "enabled": true,
+        "reminders": [
+            {
+                "send_at": "2026-12-21T18:00:00+11:00",
+                "channel": "push",
+                "message": "Put out your general waste, recycling bin(s) tonight."
+            }
+        ]
+    },
+    "data_note": "Illustrative schedule for the CSCI927 prototype; not official council data.",
+    "generated_at": "2026-10-19T08:54:39+00:00"
+}

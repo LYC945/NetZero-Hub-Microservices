@@ -1,0 +1,391 @@
+case_id,activity,timestamp,service,resource,outcome,detail
+case-bc60c226ba0d,Receive carbon footprint request,2026-10-19T08:54:15.842+00:00,EA01,EA Calculation Engine,ok,u-1001
+case-bc60c226ba0d,Check user consent,2026-10-19T08:54:15.843+00:00,EA01,EA Calculation Engine,ok,
+case-bc60c226ba0d,Validate activity data,2026-10-19T08:54:15.843+00:00,EA01,EA Calculation Engine,valid,
+case-bc60c226ba0d,Retrieve emission factors,2026-10-19T08:54:15.843+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-bc60c226ba0d,Calculate category emissions,2026-10-19T08:54:15.843+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-bc60c226ba0d,Store result in sustainability history,2026-10-19T08:54:15.845+00:00,EA01,EA Calculation Engine,ok,cf-efdba3b2ad
+case-bc60c226ba0d,Return carbon footprint to NetZero Hub,2026-10-19T08:54:15.846+00:00,EA01,EA Calculation Engine,complete,cf-efdba3b2ad
+case-be3ee7638bc3,Receive carbon footprint request,2026-10-19T08:54:15.861+00:00,EA01,EA Calculation Engine,ok,u-1001
+case-be3ee7638bc3,Check user consent,2026-10-19T08:54:15.861+00:00,EA01,EA Calculation Engine,ok,
+case-be3ee7638bc3,Validate activity data,2026-10-19T08:54:15.861+00:00,EA01,EA Calculation Engine,valid,
+case-be3ee7638bc3,Retrieve emission factors,2026-10-19T08:54:15.861+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-be3ee7638bc3,Calculate category emissions,2026-10-19T08:54:15.861+00:00,EA01,EA Calculation Engine,ok,"energy,transport"
+case-be3ee7638bc3,Store result in sustainability history,2026-10-19T08:54:15.864+00:00,EA01,EA Calculation Engine,ok,cf-8161f1d9fa
+case-be3ee7638bc3,Return carbon footprint to NetZero Hub,2026-10-19T08:54:15.864+00:00,EA01,EA Calculation Engine,incomplete,cf-8161f1d9fa
+case-c65d9755264f,Receive carbon footprint request,2026-10-19T08:54:15.878+00:00,EA01,EA Calculation Engine,ok,u-1001
+case-c65d9755264f,Check user consent,2026-10-19T08:54:15.878+00:00,EA01,EA Calculation Engine,ok,
+case-c65d9755264f,Validate activity data,2026-10-19T08:54:15.878+00:00,EA01,EA Calculation Engine,invalid,recyclingAmount cannot exceed wasteGenerated.
+case-28ccb1c9565e,Receive carbon footprint request,2026-10-19T08:54:15.888+00:00,EA01,EA Calculation Engine,ok,u-1001
+case-28ccb1c9565e,Check user consent,2026-10-19T08:54:15.888+00:00,EA01,EA Calculation Engine,rejected,consent not current
+case-journey-1792400056,Receive carbon footprint request,2026-10-19T08:54:16.045+00:00,EA01,EA Calculation Engine,ok,u-journey
+case-journey-1792400056,Check user consent,2026-10-19T08:54:16.045+00:00,EA01,EA Calculation Engine,ok,
+case-journey-1792400056,Validate activity data,2026-10-19T08:54:16.045+00:00,EA01,EA Calculation Engine,valid,
+case-journey-1792400056,Retrieve emission factors,2026-10-19T08:54:16.045+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-journey-1792400056,Calculate category emissions,2026-10-19T08:54:16.045+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-journey-1792400056,Store result in sustainability history,2026-10-19T08:54:16.047+00:00,EA01,EA Calculation Engine,ok,cf-848df3769f
+case-journey-1792400056,Return carbon footprint to NetZero Hub,2026-10-19T08:54:16.047+00:00,EA01,EA Calculation Engine,complete,cf-848df3769f
+case-47cf2fa9252b,Receive carbon footprint request,2026-10-19T08:54:17.108+00:00,EA01,EA Calculation Engine,ok,u-load
+case-47cf2fa9252b,Check user consent,2026-10-19T08:54:17.109+00:00,EA01,EA Calculation Engine,ok,
+case-47cf2fa9252b,Validate activity data,2026-10-19T08:54:17.109+00:00,EA01,EA Calculation Engine,valid,
+case-47cf2fa9252b,Retrieve emission factors,2026-10-19T08:54:17.109+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-47cf2fa9252b,Calculate category emissions,2026-10-19T08:54:17.109+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-47cf2fa9252b,Store result in sustainability history,2026-10-19T08:54:17.111+00:00,EA01,EA Calculation Engine,ok,cf-01757747c8
+case-47cf2fa9252b,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.111+00:00,EA01,EA Calculation Engine,complete,cf-01757747c8
+case-e265d960fde7,Receive carbon footprint request,2026-10-19T08:54:17.123+00:00,EA01,EA Calculation Engine,ok,u-load
+case-e265d960fde7,Check user consent,2026-10-19T08:54:17.123+00:00,EA01,EA Calculation Engine,ok,
+case-e265d960fde7,Validate activity data,2026-10-19T08:54:17.123+00:00,EA01,EA Calculation Engine,valid,
+case-e265d960fde7,Retrieve emission factors,2026-10-19T08:54:17.123+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-e265d960fde7,Calculate category emissions,2026-10-19T08:54:17.123+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-e265d960fde7,Store result in sustainability history,2026-10-19T08:54:17.125+00:00,EA01,EA Calculation Engine,ok,cf-01416a1762
+case-e265d960fde7,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.125+00:00,EA01,EA Calculation Engine,complete,cf-01416a1762
+case-693d38d8b3ad,Receive carbon footprint request,2026-10-19T08:54:17.135+00:00,EA01,EA Calculation Engine,ok,u-load
+case-693d38d8b3ad,Check user consent,2026-10-19T08:54:17.135+00:00,EA01,EA Calculation Engine,ok,
+case-693d38d8b3ad,Validate activity data,2026-10-19T08:54:17.135+00:00,EA01,EA Calculation Engine,valid,
+case-693d38d8b3ad,Retrieve emission factors,2026-10-19T08:54:17.135+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-693d38d8b3ad,Calculate category emissions,2026-10-19T08:54:17.135+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-693d38d8b3ad,Store result in sustainability history,2026-10-19T08:54:17.137+00:00,EA01,EA Calculation Engine,ok,cf-aa0458592d
+case-693d38d8b3ad,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.137+00:00,EA01,EA Calculation Engine,complete,cf-aa0458592d
+case-1b43755fea32,Receive carbon footprint request,2026-10-19T08:54:17.147+00:00,EA01,EA Calculation Engine,ok,u-load
+case-1b43755fea32,Check user consent,2026-10-19T08:54:17.147+00:00,EA01,EA Calculation Engine,ok,
+case-1b43755fea32,Validate activity data,2026-10-19T08:54:17.147+00:00,EA01,EA Calculation Engine,valid,
+case-1b43755fea32,Retrieve emission factors,2026-10-19T08:54:17.147+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-1b43755fea32,Calculate category emissions,2026-10-19T08:54:17.147+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-1b43755fea32,Store result in sustainability history,2026-10-19T08:54:17.149+00:00,EA01,EA Calculation Engine,ok,cf-e6ce51b7cb
+case-1b43755fea32,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.149+00:00,EA01,EA Calculation Engine,complete,cf-e6ce51b7cb
+case-bf2f3f1359ef,Receive carbon footprint request,2026-10-19T08:54:17.158+00:00,EA01,EA Calculation Engine,ok,u-load
+case-bf2f3f1359ef,Check user consent,2026-10-19T08:54:17.158+00:00,EA01,EA Calculation Engine,ok,
+case-bf2f3f1359ef,Validate activity data,2026-10-19T08:54:17.158+00:00,EA01,EA Calculation Engine,valid,
+case-bf2f3f1359ef,Retrieve emission factors,2026-10-19T08:54:17.158+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-bf2f3f1359ef,Calculate category emissions,2026-10-19T08:54:17.158+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-bf2f3f1359ef,Store result in sustainability history,2026-10-19T08:54:17.159+00:00,EA01,EA Calculation Engine,ok,cf-36629083d8
+case-bf2f3f1359ef,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.160+00:00,EA01,EA Calculation Engine,complete,cf-36629083d8
+case-f338bbe9c82a,Receive carbon footprint request,2026-10-19T08:54:17.170+00:00,EA01,EA Calculation Engine,ok,u-load
+case-f338bbe9c82a,Check user consent,2026-10-19T08:54:17.170+00:00,EA01,EA Calculation Engine,ok,
+case-f338bbe9c82a,Validate activity data,2026-10-19T08:54:17.170+00:00,EA01,EA Calculation Engine,valid,
+case-f338bbe9c82a,Retrieve emission factors,2026-10-19T08:54:17.170+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-f338bbe9c82a,Calculate category emissions,2026-10-19T08:54:17.170+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-f338bbe9c82a,Store result in sustainability history,2026-10-19T08:54:17.172+00:00,EA01,EA Calculation Engine,ok,cf-66c46b4060
+case-f338bbe9c82a,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.172+00:00,EA01,EA Calculation Engine,complete,cf-66c46b4060
+case-76d9b9b3d1cf,Receive carbon footprint request,2026-10-19T08:54:17.181+00:00,EA01,EA Calculation Engine,ok,u-load
+case-76d9b9b3d1cf,Check user consent,2026-10-19T08:54:17.181+00:00,EA01,EA Calculation Engine,ok,
+case-76d9b9b3d1cf,Validate activity data,2026-10-19T08:54:17.181+00:00,EA01,EA Calculation Engine,valid,
+case-76d9b9b3d1cf,Retrieve emission factors,2026-10-19T08:54:17.181+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-76d9b9b3d1cf,Calculate category emissions,2026-10-19T08:54:17.181+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-76d9b9b3d1cf,Store result in sustainability history,2026-10-19T08:54:17.183+00:00,EA01,EA Calculation Engine,ok,cf-f3b4415271
+case-76d9b9b3d1cf,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.183+00:00,EA01,EA Calculation Engine,complete,cf-f3b4415271
+case-d6e493bad287,Receive carbon footprint request,2026-10-19T08:54:17.195+00:00,EA01,EA Calculation Engine,ok,u-load
+case-d6e493bad287,Check user consent,2026-10-19T08:54:17.195+00:00,EA01,EA Calculation Engine,ok,
+case-d6e493bad287,Validate activity data,2026-10-19T08:54:17.195+00:00,EA01,EA Calculation Engine,valid,
+case-d6e493bad287,Retrieve emission factors,2026-10-19T08:54:17.195+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-d6e493bad287,Calculate category emissions,2026-10-19T08:54:17.195+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-d6e493bad287,Store result in sustainability history,2026-10-19T08:54:17.198+00:00,EA01,EA Calculation Engine,ok,cf-8dcc2e440e
+case-d6e493bad287,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.198+00:00,EA01,EA Calculation Engine,complete,cf-8dcc2e440e
+case-09a41976123f,Receive carbon footprint request,2026-10-19T08:54:17.209+00:00,EA01,EA Calculation Engine,ok,u-load
+case-09a41976123f,Check user consent,2026-10-19T08:54:17.209+00:00,EA01,EA Calculation Engine,ok,
+case-09a41976123f,Validate activity data,2026-10-19T08:54:17.209+00:00,EA01,EA Calculation Engine,valid,
+case-09a41976123f,Retrieve emission factors,2026-10-19T08:54:17.209+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-09a41976123f,Calculate category emissions,2026-10-19T08:54:17.210+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-09a41976123f,Store result in sustainability history,2026-10-19T08:54:17.212+00:00,EA01,EA Calculation Engine,ok,cf-ba4079f8f5
+case-09a41976123f,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.212+00:00,EA01,EA Calculation Engine,complete,cf-ba4079f8f5
+case-dc09eeb3c777,Receive carbon footprint request,2026-10-19T08:54:17.224+00:00,EA01,EA Calculation Engine,ok,u-load
+case-dc09eeb3c777,Check user consent,2026-10-19T08:54:17.224+00:00,EA01,EA Calculation Engine,ok,
+case-dc09eeb3c777,Validate activity data,2026-10-19T08:54:17.224+00:00,EA01,EA Calculation Engine,valid,
+case-dc09eeb3c777,Retrieve emission factors,2026-10-19T08:54:17.224+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-dc09eeb3c777,Calculate category emissions,2026-10-19T08:54:17.224+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-dc09eeb3c777,Store result in sustainability history,2026-10-19T08:54:17.227+00:00,EA01,EA Calculation Engine,ok,cf-ffe3b29c8c
+case-dc09eeb3c777,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.227+00:00,EA01,EA Calculation Engine,complete,cf-ffe3b29c8c
+case-c76d98adac63,Receive carbon footprint request,2026-10-19T08:54:17.241+00:00,EA01,EA Calculation Engine,ok,u-load
+case-c76d98adac63,Check user consent,2026-10-19T08:54:17.241+00:00,EA01,EA Calculation Engine,ok,
+case-c76d98adac63,Validate activity data,2026-10-19T08:54:17.241+00:00,EA01,EA Calculation Engine,valid,
+case-c76d98adac63,Retrieve emission factors,2026-10-19T08:54:17.241+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-c76d98adac63,Calculate category emissions,2026-10-19T08:54:17.241+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-c76d98adac63,Store result in sustainability history,2026-10-19T08:54:17.243+00:00,EA01,EA Calculation Engine,ok,cf-4615f99548
+case-c76d98adac63,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.243+00:00,EA01,EA Calculation Engine,complete,cf-4615f99548
+case-9268d80bddaf,Receive carbon footprint request,2026-10-19T08:54:17.253+00:00,EA01,EA Calculation Engine,ok,u-load
+case-9268d80bddaf,Check user consent,2026-10-19T08:54:17.253+00:00,EA01,EA Calculation Engine,ok,
+case-9268d80bddaf,Validate activity data,2026-10-19T08:54:17.253+00:00,EA01,EA Calculation Engine,valid,
+case-9268d80bddaf,Retrieve emission factors,2026-10-19T08:54:17.253+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-9268d80bddaf,Calculate category emissions,2026-10-19T08:54:17.253+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-9268d80bddaf,Store result in sustainability history,2026-10-19T08:54:17.255+00:00,EA01,EA Calculation Engine,ok,cf-11ed9c10af
+case-9268d80bddaf,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.255+00:00,EA01,EA Calculation Engine,complete,cf-11ed9c10af
+case-b12157f44748,Receive carbon footprint request,2026-10-19T08:54:17.265+00:00,EA01,EA Calculation Engine,ok,u-load
+case-b12157f44748,Check user consent,2026-10-19T08:54:17.265+00:00,EA01,EA Calculation Engine,ok,
+case-b12157f44748,Validate activity data,2026-10-19T08:54:17.265+00:00,EA01,EA Calculation Engine,valid,
+case-b12157f44748,Retrieve emission factors,2026-10-19T08:54:17.265+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-b12157f44748,Calculate category emissions,2026-10-19T08:54:17.265+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-b12157f44748,Store result in sustainability history,2026-10-19T08:54:17.267+00:00,EA01,EA Calculation Engine,ok,cf-310636c34a
+case-b12157f44748,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.267+00:00,EA01,EA Calculation Engine,complete,cf-310636c34a
+case-2988fa293b10,Receive carbon footprint request,2026-10-19T08:54:17.277+00:00,EA01,EA Calculation Engine,ok,u-load
+case-2988fa293b10,Check user consent,2026-10-19T08:54:17.277+00:00,EA01,EA Calculation Engine,ok,
+case-2988fa293b10,Validate activity data,2026-10-19T08:54:17.277+00:00,EA01,EA Calculation Engine,valid,
+case-2988fa293b10,Retrieve emission factors,2026-10-19T08:54:17.277+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-2988fa293b10,Calculate category emissions,2026-10-19T08:54:17.277+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-2988fa293b10,Store result in sustainability history,2026-10-19T08:54:17.714+00:00,EA01,EA Calculation Engine,ok,cf-001263fc08
+case-2988fa293b10,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.714+00:00,EA01,EA Calculation Engine,complete,cf-001263fc08
+case-2815c16614e2,Receive carbon footprint request,2026-10-19T08:54:17.723+00:00,EA01,EA Calculation Engine,ok,u-load
+case-2815c16614e2,Check user consent,2026-10-19T08:54:17.723+00:00,EA01,EA Calculation Engine,ok,
+case-2815c16614e2,Validate activity data,2026-10-19T08:54:17.723+00:00,EA01,EA Calculation Engine,valid,
+case-2815c16614e2,Retrieve emission factors,2026-10-19T08:54:17.723+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-2815c16614e2,Calculate category emissions,2026-10-19T08:54:17.723+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-2815c16614e2,Store result in sustainability history,2026-10-19T08:54:17.724+00:00,EA01,EA Calculation Engine,ok,cf-94a33fde17
+case-2815c16614e2,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.724+00:00,EA01,EA Calculation Engine,complete,cf-94a33fde17
+case-55100fbad926,Receive carbon footprint request,2026-10-19T08:54:17.737+00:00,EA01,EA Calculation Engine,ok,u-load
+case-55100fbad926,Check user consent,2026-10-19T08:54:17.737+00:00,EA01,EA Calculation Engine,ok,
+case-55100fbad926,Validate activity data,2026-10-19T08:54:17.738+00:00,EA01,EA Calculation Engine,valid,
+case-55100fbad926,Retrieve emission factors,2026-10-19T08:54:17.738+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-55100fbad926,Calculate category emissions,2026-10-19T08:54:17.738+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-55100fbad926,Store result in sustainability history,2026-10-19T08:54:17.740+00:00,EA01,EA Calculation Engine,ok,cf-9c59d26ba8
+case-55100fbad926,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.740+00:00,EA01,EA Calculation Engine,complete,cf-9c59d26ba8
+case-52331e4b9c12,Receive carbon footprint request,2026-10-19T08:54:17.751+00:00,EA01,EA Calculation Engine,ok,u-load
+case-52331e4b9c12,Check user consent,2026-10-19T08:54:17.751+00:00,EA01,EA Calculation Engine,ok,
+case-52331e4b9c12,Validate activity data,2026-10-19T08:54:17.751+00:00,EA01,EA Calculation Engine,valid,
+case-52331e4b9c12,Retrieve emission factors,2026-10-19T08:54:17.751+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-52331e4b9c12,Calculate category emissions,2026-10-19T08:54:17.751+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-52331e4b9c12,Store result in sustainability history,2026-10-19T08:54:17.754+00:00,EA01,EA Calculation Engine,ok,cf-e6efc12f4d
+case-52331e4b9c12,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.754+00:00,EA01,EA Calculation Engine,complete,cf-e6efc12f4d
+case-eb62bf25c6c1,Receive carbon footprint request,2026-10-19T08:54:17.764+00:00,EA01,EA Calculation Engine,ok,u-load
+case-eb62bf25c6c1,Check user consent,2026-10-19T08:54:17.764+00:00,EA01,EA Calculation Engine,ok,
+case-eb62bf25c6c1,Validate activity data,2026-10-19T08:54:17.764+00:00,EA01,EA Calculation Engine,valid,
+case-eb62bf25c6c1,Retrieve emission factors,2026-10-19T08:54:17.764+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-eb62bf25c6c1,Calculate category emissions,2026-10-19T08:54:17.764+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-eb62bf25c6c1,Store result in sustainability history,2026-10-19T08:54:17.766+00:00,EA01,EA Calculation Engine,ok,cf-6b0383367a
+case-eb62bf25c6c1,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.766+00:00,EA01,EA Calculation Engine,complete,cf-6b0383367a
+case-795144abb2e1,Receive carbon footprint request,2026-10-19T08:54:17.775+00:00,EA01,EA Calculation Engine,ok,u-load
+case-795144abb2e1,Check user consent,2026-10-19T08:54:17.775+00:00,EA01,EA Calculation Engine,ok,
+case-795144abb2e1,Validate activity data,2026-10-19T08:54:17.775+00:00,EA01,EA Calculation Engine,valid,
+case-795144abb2e1,Retrieve emission factors,2026-10-19T08:54:17.775+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-795144abb2e1,Calculate category emissions,2026-10-19T08:54:17.776+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-795144abb2e1,Store result in sustainability history,2026-10-19T08:54:17.778+00:00,EA01,EA Calculation Engine,ok,cf-dafc96cd51
+case-795144abb2e1,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.778+00:00,EA01,EA Calculation Engine,complete,cf-dafc96cd51
+case-51b4cbec9790,Receive carbon footprint request,2026-10-19T08:54:17.788+00:00,EA01,EA Calculation Engine,ok,u-load
+case-51b4cbec9790,Check user consent,2026-10-19T08:54:17.788+00:00,EA01,EA Calculation Engine,ok,
+case-51b4cbec9790,Validate activity data,2026-10-19T08:54:17.788+00:00,EA01,EA Calculation Engine,valid,
+case-51b4cbec9790,Retrieve emission factors,2026-10-19T08:54:17.788+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-51b4cbec9790,Calculate category emissions,2026-10-19T08:54:17.788+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-51b4cbec9790,Store result in sustainability history,2026-10-19T08:54:17.790+00:00,EA01,EA Calculation Engine,ok,cf-59cb836afa
+case-51b4cbec9790,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.790+00:00,EA01,EA Calculation Engine,complete,cf-59cb836afa
+case-1f04ddba0086,Receive carbon footprint request,2026-10-19T08:54:17.800+00:00,EA01,EA Calculation Engine,ok,u-load
+case-1f04ddba0086,Check user consent,2026-10-19T08:54:17.800+00:00,EA01,EA Calculation Engine,ok,
+case-1f04ddba0086,Validate activity data,2026-10-19T08:54:17.800+00:00,EA01,EA Calculation Engine,valid,
+case-1f04ddba0086,Retrieve emission factors,2026-10-19T08:54:17.800+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-1f04ddba0086,Calculate category emissions,2026-10-19T08:54:17.800+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-1f04ddba0086,Store result in sustainability history,2026-10-19T08:54:17.802+00:00,EA01,EA Calculation Engine,ok,cf-df532ee9ae
+case-1f04ddba0086,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.802+00:00,EA01,EA Calculation Engine,complete,cf-df532ee9ae
+case-a48ecbf1b3c8,Receive carbon footprint request,2026-10-19T08:54:17.812+00:00,EA01,EA Calculation Engine,ok,u-load
+case-a48ecbf1b3c8,Check user consent,2026-10-19T08:54:17.812+00:00,EA01,EA Calculation Engine,ok,
+case-a48ecbf1b3c8,Validate activity data,2026-10-19T08:54:17.812+00:00,EA01,EA Calculation Engine,valid,
+case-a48ecbf1b3c8,Retrieve emission factors,2026-10-19T08:54:17.812+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-a48ecbf1b3c8,Calculate category emissions,2026-10-19T08:54:17.812+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-a48ecbf1b3c8,Store result in sustainability history,2026-10-19T08:54:17.814+00:00,EA01,EA Calculation Engine,ok,cf-0eaed6fc36
+case-a48ecbf1b3c8,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.814+00:00,EA01,EA Calculation Engine,complete,cf-0eaed6fc36
+case-11400787d613,Receive carbon footprint request,2026-10-19T08:54:17.823+00:00,EA01,EA Calculation Engine,ok,u-load
+case-11400787d613,Check user consent,2026-10-19T08:54:17.823+00:00,EA01,EA Calculation Engine,ok,
+case-11400787d613,Validate activity data,2026-10-19T08:54:17.823+00:00,EA01,EA Calculation Engine,valid,
+case-11400787d613,Retrieve emission factors,2026-10-19T08:54:17.823+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-11400787d613,Calculate category emissions,2026-10-19T08:54:17.823+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-11400787d613,Store result in sustainability history,2026-10-19T08:54:17.825+00:00,EA01,EA Calculation Engine,ok,cf-1c3a406853
+case-11400787d613,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.825+00:00,EA01,EA Calculation Engine,complete,cf-1c3a406853
+case-566d5e3e908f,Receive carbon footprint request,2026-10-19T08:54:17.834+00:00,EA01,EA Calculation Engine,ok,u-load
+case-566d5e3e908f,Check user consent,2026-10-19T08:54:17.834+00:00,EA01,EA Calculation Engine,ok,
+case-566d5e3e908f,Validate activity data,2026-10-19T08:54:17.834+00:00,EA01,EA Calculation Engine,valid,
+case-566d5e3e908f,Retrieve emission factors,2026-10-19T08:54:17.834+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-566d5e3e908f,Calculate category emissions,2026-10-19T08:54:17.834+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-566d5e3e908f,Store result in sustainability history,2026-10-19T08:54:17.836+00:00,EA01,EA Calculation Engine,ok,cf-c3d2f7a4e7
+case-566d5e3e908f,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.836+00:00,EA01,EA Calculation Engine,complete,cf-c3d2f7a4e7
+case-0c301b3331e2,Receive carbon footprint request,2026-10-19T08:54:17.846+00:00,EA01,EA Calculation Engine,ok,u-load
+case-0c301b3331e2,Check user consent,2026-10-19T08:54:17.846+00:00,EA01,EA Calculation Engine,ok,
+case-0c301b3331e2,Validate activity data,2026-10-19T08:54:17.846+00:00,EA01,EA Calculation Engine,valid,
+case-0c301b3331e2,Retrieve emission factors,2026-10-19T08:54:17.846+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-0c301b3331e2,Calculate category emissions,2026-10-19T08:54:17.846+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-0c301b3331e2,Store result in sustainability history,2026-10-19T08:54:17.849+00:00,EA01,EA Calculation Engine,ok,cf-18b966ee93
+case-0c301b3331e2,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.849+00:00,EA01,EA Calculation Engine,complete,cf-18b966ee93
+case-753eba827a16,Receive carbon footprint request,2026-10-19T08:54:17.856+00:00,EA01,EA Calculation Engine,ok,u-load
+case-753eba827a16,Check user consent,2026-10-19T08:54:17.856+00:00,EA01,EA Calculation Engine,ok,
+case-753eba827a16,Validate activity data,2026-10-19T08:54:17.856+00:00,EA01,EA Calculation Engine,valid,
+case-753eba827a16,Retrieve emission factors,2026-10-19T08:54:17.856+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-753eba827a16,Calculate category emissions,2026-10-19T08:54:17.856+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-753eba827a16,Store result in sustainability history,2026-10-19T08:54:17.858+00:00,EA01,EA Calculation Engine,ok,cf-c97faf260a
+case-753eba827a16,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.858+00:00,EA01,EA Calculation Engine,complete,cf-c97faf260a
+case-2ba5040d7747,Receive carbon footprint request,2026-10-19T08:54:17.869+00:00,EA01,EA Calculation Engine,ok,u-load
+case-2ba5040d7747,Check user consent,2026-10-19T08:54:17.869+00:00,EA01,EA Calculation Engine,ok,
+case-2ba5040d7747,Validate activity data,2026-10-19T08:54:17.869+00:00,EA01,EA Calculation Engine,valid,
+case-2ba5040d7747,Retrieve emission factors,2026-10-19T08:54:17.869+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-2ba5040d7747,Calculate category emissions,2026-10-19T08:54:17.869+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-2ba5040d7747,Store result in sustainability history,2026-10-19T08:54:17.870+00:00,EA01,EA Calculation Engine,ok,cf-154c0b5b4c
+case-2ba5040d7747,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.870+00:00,EA01,EA Calculation Engine,complete,cf-154c0b5b4c
+case-318dd27ab720,Receive carbon footprint request,2026-10-19T08:54:17.883+00:00,EA01,EA Calculation Engine,ok,u-load
+case-318dd27ab720,Check user consent,2026-10-19T08:54:17.884+00:00,EA01,EA Calculation Engine,ok,
+case-318dd27ab720,Validate activity data,2026-10-19T08:54:17.884+00:00,EA01,EA Calculation Engine,valid,
+case-318dd27ab720,Retrieve emission factors,2026-10-19T08:54:17.884+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-318dd27ab720,Calculate category emissions,2026-10-19T08:54:17.884+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-318dd27ab720,Store result in sustainability history,2026-10-19T08:54:17.886+00:00,EA01,EA Calculation Engine,ok,cf-a47445fd23
+case-318dd27ab720,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.886+00:00,EA01,EA Calculation Engine,complete,cf-a47445fd23
+case-3b7591c3eb44,Receive carbon footprint request,2026-10-19T08:54:17.898+00:00,EA01,EA Calculation Engine,ok,u-load
+case-3b7591c3eb44,Check user consent,2026-10-19T08:54:17.898+00:00,EA01,EA Calculation Engine,ok,
+case-3b7591c3eb44,Validate activity data,2026-10-19T08:54:17.898+00:00,EA01,EA Calculation Engine,valid,
+case-3b7591c3eb44,Retrieve emission factors,2026-10-19T08:54:17.898+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-3b7591c3eb44,Calculate category emissions,2026-10-19T08:54:17.898+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-3b7591c3eb44,Store result in sustainability history,2026-10-19T08:54:17.900+00:00,EA01,EA Calculation Engine,ok,cf-dcb20e68d9
+case-3b7591c3eb44,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.900+00:00,EA01,EA Calculation Engine,complete,cf-dcb20e68d9
+case-147fecc59330,Receive carbon footprint request,2026-10-19T08:54:17.912+00:00,EA01,EA Calculation Engine,ok,u-load
+case-147fecc59330,Check user consent,2026-10-19T08:54:17.913+00:00,EA01,EA Calculation Engine,ok,
+case-147fecc59330,Validate activity data,2026-10-19T08:54:17.913+00:00,EA01,EA Calculation Engine,valid,
+case-147fecc59330,Retrieve emission factors,2026-10-19T08:54:17.913+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-147fecc59330,Calculate category emissions,2026-10-19T08:54:17.913+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-147fecc59330,Store result in sustainability history,2026-10-19T08:54:17.914+00:00,EA01,EA Calculation Engine,ok,cf-f33c0f7079
+case-147fecc59330,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.914+00:00,EA01,EA Calculation Engine,complete,cf-f33c0f7079
+case-fb25cca3581e,Receive carbon footprint request,2026-10-19T08:54:17.926+00:00,EA01,EA Calculation Engine,ok,u-load
+case-fb25cca3581e,Check user consent,2026-10-19T08:54:17.926+00:00,EA01,EA Calculation Engine,ok,
+case-fb25cca3581e,Validate activity data,2026-10-19T08:54:17.926+00:00,EA01,EA Calculation Engine,valid,
+case-fb25cca3581e,Retrieve emission factors,2026-10-19T08:54:17.926+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-fb25cca3581e,Calculate category emissions,2026-10-19T08:54:17.926+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-fb25cca3581e,Store result in sustainability history,2026-10-19T08:54:17.928+00:00,EA01,EA Calculation Engine,ok,cf-ed17de3ea4
+case-fb25cca3581e,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.928+00:00,EA01,EA Calculation Engine,complete,cf-ed17de3ea4
+case-a2cff2006ea0,Receive carbon footprint request,2026-10-19T08:54:17.939+00:00,EA01,EA Calculation Engine,ok,u-load
+case-a2cff2006ea0,Check user consent,2026-10-19T08:54:17.940+00:00,EA01,EA Calculation Engine,ok,
+case-a2cff2006ea0,Validate activity data,2026-10-19T08:54:17.940+00:00,EA01,EA Calculation Engine,valid,
+case-a2cff2006ea0,Retrieve emission factors,2026-10-19T08:54:17.940+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-a2cff2006ea0,Calculate category emissions,2026-10-19T08:54:17.940+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-a2cff2006ea0,Store result in sustainability history,2026-10-19T08:54:17.942+00:00,EA01,EA Calculation Engine,ok,cf-fdb4314a41
+case-a2cff2006ea0,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.942+00:00,EA01,EA Calculation Engine,complete,cf-fdb4314a41
+case-21a3ad631139,Receive carbon footprint request,2026-10-19T08:54:17.953+00:00,EA01,EA Calculation Engine,ok,u-load
+case-21a3ad631139,Check user consent,2026-10-19T08:54:17.953+00:00,EA01,EA Calculation Engine,ok,
+case-21a3ad631139,Validate activity data,2026-10-19T08:54:17.953+00:00,EA01,EA Calculation Engine,valid,
+case-21a3ad631139,Retrieve emission factors,2026-10-19T08:54:17.953+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-21a3ad631139,Calculate category emissions,2026-10-19T08:54:17.953+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-21a3ad631139,Store result in sustainability history,2026-10-19T08:54:17.955+00:00,EA01,EA Calculation Engine,ok,cf-eeeb9ed693
+case-21a3ad631139,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.955+00:00,EA01,EA Calculation Engine,complete,cf-eeeb9ed693
+case-edc5f1a1b518,Receive carbon footprint request,2026-10-19T08:54:17.964+00:00,EA01,EA Calculation Engine,ok,u-load
+case-edc5f1a1b518,Check user consent,2026-10-19T08:54:17.964+00:00,EA01,EA Calculation Engine,ok,
+case-edc5f1a1b518,Validate activity data,2026-10-19T08:54:17.964+00:00,EA01,EA Calculation Engine,valid,
+case-edc5f1a1b518,Retrieve emission factors,2026-10-19T08:54:17.964+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-edc5f1a1b518,Calculate category emissions,2026-10-19T08:54:17.964+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-edc5f1a1b518,Store result in sustainability history,2026-10-19T08:54:17.967+00:00,EA01,EA Calculation Engine,ok,cf-cd29c9f031
+case-edc5f1a1b518,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.967+00:00,EA01,EA Calculation Engine,complete,cf-cd29c9f031
+case-4547f559d258,Receive carbon footprint request,2026-10-19T08:54:17.977+00:00,EA01,EA Calculation Engine,ok,u-load
+case-4547f559d258,Check user consent,2026-10-19T08:54:17.977+00:00,EA01,EA Calculation Engine,ok,
+case-4547f559d258,Validate activity data,2026-10-19T08:54:17.977+00:00,EA01,EA Calculation Engine,valid,
+case-4547f559d258,Retrieve emission factors,2026-10-19T08:54:17.977+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-4547f559d258,Calculate category emissions,2026-10-19T08:54:17.977+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-4547f559d258,Store result in sustainability history,2026-10-19T08:54:17.979+00:00,EA01,EA Calculation Engine,ok,cf-b3c90b522b
+case-4547f559d258,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.979+00:00,EA01,EA Calculation Engine,complete,cf-b3c90b522b
+case-dd24b5e4cd3b,Receive carbon footprint request,2026-10-19T08:54:17.988+00:00,EA01,EA Calculation Engine,ok,u-load
+case-dd24b5e4cd3b,Check user consent,2026-10-19T08:54:17.988+00:00,EA01,EA Calculation Engine,ok,
+case-dd24b5e4cd3b,Validate activity data,2026-10-19T08:54:17.988+00:00,EA01,EA Calculation Engine,valid,
+case-dd24b5e4cd3b,Retrieve emission factors,2026-10-19T08:54:17.988+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-dd24b5e4cd3b,Calculate category emissions,2026-10-19T08:54:17.988+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-dd24b5e4cd3b,Store result in sustainability history,2026-10-19T08:54:17.992+00:00,EA01,EA Calculation Engine,ok,cf-6f123aa864
+case-dd24b5e4cd3b,Return carbon footprint to NetZero Hub,2026-10-19T08:54:17.992+00:00,EA01,EA Calculation Engine,complete,cf-6f123aa864
+case-0af4324f5ea0,Receive carbon footprint request,2026-10-19T08:54:18.002+00:00,EA01,EA Calculation Engine,ok,u-load
+case-0af4324f5ea0,Check user consent,2026-10-19T08:54:18.002+00:00,EA01,EA Calculation Engine,ok,
+case-0af4324f5ea0,Validate activity data,2026-10-19T08:54:18.002+00:00,EA01,EA Calculation Engine,valid,
+case-0af4324f5ea0,Retrieve emission factors,2026-10-19T08:54:18.002+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-0af4324f5ea0,Calculate category emissions,2026-10-19T08:54:18.002+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-0af4324f5ea0,Store result in sustainability history,2026-10-19T08:54:18.006+00:00,EA01,EA Calculation Engine,ok,cf-2c8c558f9c
+case-0af4324f5ea0,Return carbon footprint to NetZero Hub,2026-10-19T08:54:18.006+00:00,EA01,EA Calculation Engine,complete,cf-2c8c558f9c
+case-d8295cb4aabe,Receive carbon footprint request,2026-10-19T08:54:18.015+00:00,EA01,EA Calculation Engine,ok,u-load
+case-d8295cb4aabe,Check user consent,2026-10-19T08:54:18.015+00:00,EA01,EA Calculation Engine,ok,
+case-d8295cb4aabe,Validate activity data,2026-10-19T08:54:18.015+00:00,EA01,EA Calculation Engine,valid,
+case-d8295cb4aabe,Retrieve emission factors,2026-10-19T08:54:18.015+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-d8295cb4aabe,Calculate category emissions,2026-10-19T08:54:18.015+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-d8295cb4aabe,Store result in sustainability history,2026-10-19T08:54:18.017+00:00,EA01,EA Calculation Engine,ok,cf-d75fe19b72
+case-d8295cb4aabe,Return carbon footprint to NetZero Hub,2026-10-19T08:54:18.017+00:00,EA01,EA Calculation Engine,complete,cf-d75fe19b72
+case-5ae9d43c2ffc,Receive carbon footprint request,2026-10-19T08:54:18.027+00:00,EA01,EA Calculation Engine,ok,u-load
+case-5ae9d43c2ffc,Check user consent,2026-10-19T08:54:18.027+00:00,EA01,EA Calculation Engine,ok,
+case-5ae9d43c2ffc,Validate activity data,2026-10-19T08:54:18.027+00:00,EA01,EA Calculation Engine,valid,
+case-5ae9d43c2ffc,Retrieve emission factors,2026-10-19T08:54:18.027+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-5ae9d43c2ffc,Calculate category emissions,2026-10-19T08:54:18.027+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-5ae9d43c2ffc,Store result in sustainability history,2026-10-19T08:54:18.030+00:00,EA01,EA Calculation Engine,ok,cf-276b5278a0
+case-5ae9d43c2ffc,Return carbon footprint to NetZero Hub,2026-10-19T08:54:18.030+00:00,EA01,EA Calculation Engine,complete,cf-276b5278a0
+case-e6d9eee71d16,Receive carbon footprint request,2026-10-19T08:54:18.039+00:00,EA01,EA Calculation Engine,ok,u-load
+case-e6d9eee71d16,Check user consent,2026-10-19T08:54:18.039+00:00,EA01,EA Calculation Engine,ok,
+case-e6d9eee71d16,Validate activity data,2026-10-19T08:54:18.039+00:00,EA01,EA Calculation Engine,valid,
+case-e6d9eee71d16,Retrieve emission factors,2026-10-19T08:54:18.039+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-e6d9eee71d16,Calculate category emissions,2026-10-19T08:54:18.039+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-e6d9eee71d16,Store result in sustainability history,2026-10-19T08:54:18.041+00:00,EA01,EA Calculation Engine,ok,cf-21e8d69db7
+case-e6d9eee71d16,Return carbon footprint to NetZero Hub,2026-10-19T08:54:18.041+00:00,EA01,EA Calculation Engine,complete,cf-21e8d69db7
+case-6097b1014cd2,Receive carbon footprint request,2026-10-19T08:54:18.052+00:00,EA01,EA Calculation Engine,ok,u-load
+case-6097b1014cd2,Check user consent,2026-10-19T08:54:18.052+00:00,EA01,EA Calculation Engine,ok,
+case-6097b1014cd2,Validate activity data,2026-10-19T08:54:18.052+00:00,EA01,EA Calculation Engine,valid,
+case-6097b1014cd2,Retrieve emission factors,2026-10-19T08:54:18.052+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-6097b1014cd2,Calculate category emissions,2026-10-19T08:54:18.052+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-6097b1014cd2,Store result in sustainability history,2026-10-19T08:54:18.054+00:00,EA01,EA Calculation Engine,ok,cf-9eb7d1d9c1
+case-6097b1014cd2,Return carbon footprint to NetZero Hub,2026-10-19T08:54:18.054+00:00,EA01,EA Calculation Engine,complete,cf-9eb7d1d9c1
+case-ed0c1d39c003,Receive carbon footprint request,2026-10-19T08:54:18.063+00:00,EA01,EA Calculation Engine,ok,u-load
+case-ed0c1d39c003,Check user consent,2026-10-19T08:54:18.063+00:00,EA01,EA Calculation Engine,ok,
+case-ed0c1d39c003,Validate activity data,2026-10-19T08:54:18.063+00:00,EA01,EA Calculation Engine,valid,
+case-ed0c1d39c003,Retrieve emission factors,2026-10-19T08:54:18.063+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-ed0c1d39c003,Calculate category emissions,2026-10-19T08:54:18.063+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-ed0c1d39c003,Store result in sustainability history,2026-10-19T08:54:18.064+00:00,EA01,EA Calculation Engine,ok,cf-074a3fde93
+case-ed0c1d39c003,Return carbon footprint to NetZero Hub,2026-10-19T08:54:18.064+00:00,EA01,EA Calculation Engine,complete,cf-074a3fde93
+case-9ce9ce650acf,Receive carbon footprint request,2026-10-19T08:54:18.074+00:00,EA01,EA Calculation Engine,ok,u-load
+case-9ce9ce650acf,Check user consent,2026-10-19T08:54:18.074+00:00,EA01,EA Calculation Engine,ok,
+case-9ce9ce650acf,Validate activity data,2026-10-19T08:54:18.074+00:00,EA01,EA Calculation Engine,valid,
+case-9ce9ce650acf,Retrieve emission factors,2026-10-19T08:54:18.074+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-9ce9ce650acf,Calculate category emissions,2026-10-19T08:54:18.074+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-9ce9ce650acf,Store result in sustainability history,2026-10-19T08:54:18.075+00:00,EA01,EA Calculation Engine,ok,cf-140727f919
+case-9ce9ce650acf,Return carbon footprint to NetZero Hub,2026-10-19T08:54:18.076+00:00,EA01,EA Calculation Engine,complete,cf-140727f919
+case-96cb8162a286,Receive carbon footprint request,2026-10-19T08:54:18.085+00:00,EA01,EA Calculation Engine,ok,u-load
+case-96cb8162a286,Check user consent,2026-10-19T08:54:18.085+00:00,EA01,EA Calculation Engine,ok,
+case-96cb8162a286,Validate activity data,2026-10-19T08:54:18.085+00:00,EA01,EA Calculation Engine,valid,
+case-96cb8162a286,Retrieve emission factors,2026-10-19T08:54:18.085+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-96cb8162a286,Calculate category emissions,2026-10-19T08:54:18.085+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-96cb8162a286,Store result in sustainability history,2026-10-19T08:54:18.086+00:00,EA01,EA Calculation Engine,ok,cf-4298dd66c0
+case-96cb8162a286,Return carbon footprint to NetZero Hub,2026-10-19T08:54:18.086+00:00,EA01,EA Calculation Engine,complete,cf-4298dd66c0
+case-7d7c69dacfd3,Receive carbon footprint request,2026-10-19T08:54:18.096+00:00,EA01,EA Calculation Engine,ok,u-load
+case-7d7c69dacfd3,Check user consent,2026-10-19T08:54:18.096+00:00,EA01,EA Calculation Engine,ok,
+case-7d7c69dacfd3,Validate activity data,2026-10-19T08:54:18.096+00:00,EA01,EA Calculation Engine,valid,
+case-7d7c69dacfd3,Retrieve emission factors,2026-10-19T08:54:18.096+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-7d7c69dacfd3,Calculate category emissions,2026-10-19T08:54:18.096+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-7d7c69dacfd3,Store result in sustainability history,2026-10-19T08:54:18.097+00:00,EA01,EA Calculation Engine,ok,cf-1121d87d6f
+case-7d7c69dacfd3,Return carbon footprint to NetZero Hub,2026-10-19T08:54:18.097+00:00,EA01,EA Calculation Engine,complete,cf-1121d87d6f
+case-592129c70ae7,Receive carbon footprint request,2026-10-19T08:54:18.105+00:00,EA01,EA Calculation Engine,ok,u-load
+case-592129c70ae7,Check user consent,2026-10-19T08:54:18.105+00:00,EA01,EA Calculation Engine,ok,
+case-592129c70ae7,Validate activity data,2026-10-19T08:54:18.105+00:00,EA01,EA Calculation Engine,valid,
+case-592129c70ae7,Retrieve emission factors,2026-10-19T08:54:18.105+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-592129c70ae7,Calculate category emissions,2026-10-19T08:54:18.105+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-592129c70ae7,Store result in sustainability history,2026-10-19T08:54:18.107+00:00,EA01,EA Calculation Engine,ok,cf-99efa6b680
+case-592129c70ae7,Return carbon footprint to NetZero Hub,2026-10-19T08:54:18.107+00:00,EA01,EA Calculation Engine,complete,cf-99efa6b680
+case-d7da204267ee,Receive carbon footprint request,2026-10-19T08:54:18.124+00:00,EA01,EA Calculation Engine,ok,u-load
+case-d7da204267ee,Check user consent,2026-10-19T08:54:18.124+00:00,EA01,EA Calculation Engine,ok,
+case-d7da204267ee,Validate activity data,2026-10-19T08:54:18.124+00:00,EA01,EA Calculation Engine,valid,
+case-d7da204267ee,Retrieve emission factors,2026-10-19T08:54:18.124+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-d7da204267ee,Calculate category emissions,2026-10-19T08:54:18.124+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-d7da204267ee,Store result in sustainability history,2026-10-19T08:54:18.125+00:00,EA01,EA Calculation Engine,ok,cf-f60b4e1c38
+case-d7da204267ee,Return carbon footprint to NetZero Hub,2026-10-19T08:54:18.125+00:00,EA01,EA Calculation Engine,complete,cf-f60b4e1c38
+case-66f33ce8b1c1,Receive carbon footprint request,2026-10-19T08:54:18.135+00:00,EA01,EA Calculation Engine,ok,u-load
+case-66f33ce8b1c1,Check user consent,2026-10-19T08:54:18.135+00:00,EA01,EA Calculation Engine,ok,
+case-66f33ce8b1c1,Validate activity data,2026-10-19T08:54:18.135+00:00,EA01,EA Calculation Engine,valid,
+case-66f33ce8b1c1,Retrieve emission factors,2026-10-19T08:54:18.135+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-66f33ce8b1c1,Calculate category emissions,2026-10-19T08:54:18.135+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-66f33ce8b1c1,Store result in sustainability history,2026-10-19T08:54:18.137+00:00,EA01,EA Calculation Engine,ok,cf-e9a8d16aab
+case-66f33ce8b1c1,Return carbon footprint to NetZero Hub,2026-10-19T08:54:18.137+00:00,EA01,EA Calculation Engine,complete,cf-e9a8d16aab
+case-ade25b7bfa42,Receive carbon footprint request,2026-10-19T08:54:18.149+00:00,EA01,EA Calculation Engine,ok,u-load
+case-ade25b7bfa42,Check user consent,2026-10-19T08:54:18.149+00:00,EA01,EA Calculation Engine,ok,
+case-ade25b7bfa42,Validate activity data,2026-10-19T08:54:18.149+00:00,EA01,EA Calculation Engine,valid,
+case-ade25b7bfa42,Retrieve emission factors,2026-10-19T08:54:18.149+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-ade25b7bfa42,Calculate category emissions,2026-10-19T08:54:18.149+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-ade25b7bfa42,Store result in sustainability history,2026-10-19T08:54:18.151+00:00,EA01,EA Calculation Engine,ok,cf-ca73ae3cca
+case-ade25b7bfa42,Return carbon footprint to NetZero Hub,2026-10-19T08:54:18.151+00:00,EA01,EA Calculation Engine,complete,cf-ca73ae3cca
+case-d7b5d9a63bb3,Receive carbon footprint request,2026-10-19T08:54:18.162+00:00,EA01,EA Calculation Engine,ok,u-load
+case-d7b5d9a63bb3,Check user consent,2026-10-19T08:54:18.162+00:00,EA01,EA Calculation Engine,ok,
+case-d7b5d9a63bb3,Validate activity data,2026-10-19T08:54:18.162+00:00,EA01,EA Calculation Engine,valid,
+case-d7b5d9a63bb3,Retrieve emission factors,2026-10-19T08:54:18.162+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-d7b5d9a63bb3,Calculate category emissions,2026-10-19T08:54:18.162+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-d7b5d9a63bb3,Store result in sustainability history,2026-10-19T08:54:18.164+00:00,EA01,EA Calculation Engine,ok,cf-c63e7d2e17
+case-d7b5d9a63bb3,Return carbon footprint to NetZero Hub,2026-10-19T08:54:18.164+00:00,EA01,EA Calculation Engine,complete,cf-c63e7d2e17
+case-9a8eaeed870d,Receive carbon footprint request,2026-10-19T08:54:39.419+00:00,EA01,EA Calculation Engine,ok,u-2002
+case-9a8eaeed870d,Check user consent,2026-10-19T08:54:39.419+00:00,EA01,EA Calculation Engine,ok,
+case-9a8eaeed870d,Validate activity data,2026-10-19T08:54:39.419+00:00,EA01,EA Calculation Engine,valid,
+case-9a8eaeed870d,Retrieve emission factors,2026-10-19T08:54:39.419+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-9a8eaeed870d,Calculate category emissions,2026-10-19T08:54:39.419+00:00,EA01,EA Calculation Engine,ok,"energy,transport,waste"
+case-9a8eaeed870d,Store result in sustainability history,2026-10-19T08:54:39.423+00:00,EA01,EA Calculation Engine,ok,cf-909623a72f
+case-9a8eaeed870d,Return carbon footprint to NetZero Hub,2026-10-19T08:54:39.423+00:00,EA01,EA Calculation Engine,complete,cf-909623a72f
+case-466633466914,Receive carbon footprint request,2026-10-19T08:54:39.465+00:00,EA01,EA Calculation Engine,ok,u-2002
+case-466633466914,Check user consent,2026-10-19T08:54:39.465+00:00,EA01,EA Calculation Engine,ok,
+case-466633466914,Validate activity data,2026-10-19T08:54:39.465+00:00,EA01,EA Calculation Engine,valid,
+case-466633466914,Retrieve emission factors,2026-10-19T08:54:39.465+00:00,EA01,EA Calculation Engine,ok,EF-2026.10-demo
+case-466633466914,Calculate category emissions,2026-10-19T08:54:39.465+00:00,EA01,EA Calculation Engine,ok,"energy,transport"
+case-466633466914,Store result in sustainability history,2026-10-19T08:54:39.469+00:00,EA01,EA Calculation Engine,ok,cf-1236c8ead7
+case-466633466914,Return carbon footprint to NetZero Hub,2026-10-19T08:54:39.469+00:00,EA01,EA Calculation Engine,incomplete,cf-1236c8ead7

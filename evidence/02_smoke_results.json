@@ -1,0 +1,210 @@
+[
+  {
+    "id": "G1",
+    "test": "Gateway lists the three services",
+    "expected": 200,
+    "status": 200,
+    "ms": 31.9,
+    "pass": true
+  },
+  {
+    "id": "F1",
+    "test": "Web front end served through the gateway",
+    "expected": 200,
+    "status": 200,
+    "ms": 8.7,
+    "pass": true
+  },
+  {
+    "id": "F2",
+    "test": "Front-end service page with its API client",
+    "expected": 200,
+    "status": 200,
+    "ms": 11.6,
+    "pass": true
+  },
+  {
+    "id": "W1-1",
+    "test": "WMA001 health",
+    "expected": 200,
+    "status": 200,
+    "ms": 10.2,
+    "pass": true
+  },
+  {
+    "id": "W1-2",
+    "test": "WMA001 address check: supported",
+    "expected": 200,
+    "status": 200,
+    "ms": 9.0,
+    "pass": true
+  },
+  {
+    "id": "W1-3",
+    "test": "WMA001 schedule for a valid, supported postcode",
+    "expected": 200,
+    "status": 200,
+    "ms": 14.9,
+    "pass": true
+  },
+  {
+    "id": "W1-4",
+    "test": "WMA001 Christmas Day collection moves to the next day",
+    "expected": 200,
+    "status": 200,
+    "ms": 10.8,
+    "pass": true
+  },
+  {
+    "id": "W1-5",
+    "test": "WMA001 valid but unsupported postcode",
+    "expected": 404,
+    "status": 404,
+    "ms": 14.3,
+    "pass": true
+  },
+  {
+    "id": "W1-6",
+    "test": "WMA001 invalid location",
+    "expected": 400,
+    "status": 400,
+    "ms": 13.1,
+    "pass": true
+  },
+  {
+    "id": "E1-1",
+    "test": "EA01 health",
+    "expected": 200,
+    "status": 200,
+    "ms": 10.0,
+    "pass": true
+  },
+  {
+    "id": "E1-2",
+    "test": "EA01 complete footprint",
+    "expected": 201,
+    "status": 201,
+    "ms": 16.5,
+    "pass": true
+  },
+  {
+    "id": "E1-3",
+    "test": "EA01 missing waste data -> INCOMPLETE, not estimated",
+    "expected": 201,
+    "status": 201,
+    "ms": 18.9,
+    "pass": true
+  },
+  {
+    "id": "E1-4",
+    "test": "EA01 recycling > waste is rejected",
+    "expected": 422,
+    "status": 422,
+    "ms": 12.9,
+    "pass": true
+  },
+  {
+    "id": "E1-5",
+    "test": "EA01 consent not current",
+    "expected": 403,
+    "status": 403,
+    "ms": 10.1,
+    "pass": true
+  },
+  {
+    "id": "E1-6",
+    "test": "EA01 history for the user",
+    "expected": 200,
+    "status": 200,
+    "ms": 8.7,
+    "pass": true
+  },
+  {
+    "id": "W2-1",
+    "test": "WMA002 health",
+    "expected": 200,
+    "status": 200,
+    "ms": 9.9,
+    "pass": true
+  },
+  {
+    "id": "W2-2",
+    "test": "WMA002 plastic bottle -> Return and Earn",
+    "expected": 200,
+    "status": 200,
+    "ms": 12.6,
+    "pass": true
+  },
+  {
+    "id": "W2-3",
+    "test": "WMA002 food scraps in a FOGO area",
+    "expected": 200,
+    "status": 200,
+    "ms": 12.1,
+    "pass": true
+  },
+  {
+    "id": "W2-4",
+    "test": "WMA002 food scraps without FOGO -> local rule",
+    "expected": 200,
+    "status": 200,
+    "ms": 11.6,
+    "pass": true
+  },
+  {
+    "id": "W2-5",
+    "test": "WMA002 battery is hazardous",
+    "expected": 200,
+    "status": 200,
+    "ms": 13.9,
+    "pass": true
+  },
+  {
+    "id": "W2-6",
+    "test": "WMA002 fuzzy match (typo)",
+    "expected": 200,
+    "status": 200,
+    "ms": 19.1,
+    "pass": true
+  },
+  {
+    "id": "W2-7",
+    "test": "WMA002 unrecognised item",
+    "expected": 404,
+    "status": 404,
+    "ms": 15.6,
+    "pass": true
+  },
+  {
+    "id": "W2-8",
+    "test": "WMA002 location without postcode",
+    "expected": 400,
+    "status": 400,
+    "ms": 12.7,
+    "pass": true
+  },
+  {
+    "id": "J1",
+    "test": "Composed journey with one case id",
+    "pass": true,
+    "case_id": "case-journey-1792400056"
+  },
+  {
+    "id": "Q-wma001",
+    "test": "p95 response time over 50 requests",
+    "p95_ms": 15.9,
+    "pass": true
+  },
+  {
+    "id": "Q-ea01",
+    "test": "p95 response time over 50 requests",
+    "p95_ms": 15.0,
+    "pass": true
+  },
+  {
+    "id": "Q-wma002",
+    "test": "p95 response time over 50 requests",
+    "p95_ms": 16.9,
+    "pass": true
+  }
+]

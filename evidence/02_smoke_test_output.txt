@@ -1,0 +1,35 @@
+NetZero Hub smoke test against http://localhost:8080
+
+PASS  G1    200 (exp 200)    31.9 ms  Gateway lists the three services
+PASS  F1    200 (exp 200)     8.7 ms  Web front end served through the gateway
+PASS  F2    200 (exp 200)    11.6 ms  Front-end service page with its API client
+PASS  W1-1  200 (exp 200)    10.2 ms  WMA001 health
+PASS  W1-2  200 (exp 200)     9.0 ms  WMA001 address check: supported
+PASS  W1-3  200 (exp 200)    14.9 ms  WMA001 schedule for a valid, supported postcode
+PASS  W1-4  200 (exp 200)    10.8 ms  WMA001 Christmas Day collection moves to the next day
+PASS  W1-5  404 (exp 404)    14.3 ms  WMA001 valid but unsupported postcode
+PASS  W1-6  400 (exp 400)    13.1 ms  WMA001 invalid location
+PASS  E1-1  200 (exp 200)    10.0 ms  EA01 health
+PASS  E1-2  201 (exp 201)    16.5 ms  EA01 complete footprint
+PASS  E1-3  201 (exp 201)    18.9 ms  EA01 missing waste data -> INCOMPLETE, not estimated
+PASS  E1-4  422 (exp 422)    12.9 ms  EA01 recycling > waste is rejected
+PASS  E1-5  403 (exp 403)    10.1 ms  EA01 consent not current
+PASS  E1-6  200 (exp 200)     8.7 ms  EA01 history for the user
+PASS  W2-1  200 (exp 200)     9.9 ms  WMA002 health
+PASS  W2-2  200 (exp 200)    12.6 ms  WMA002 plastic bottle -> Return and Earn
+PASS  W2-3  200 (exp 200)    12.1 ms  WMA002 food scraps in a FOGO area
+PASS  W2-4  200 (exp 200)    11.6 ms  WMA002 food scraps without FOGO -> local rule
+PASS  W2-5  200 (exp 200)    13.9 ms  WMA002 battery is hazardous
+PASS  W2-6  200 (exp 200)    19.1 ms  WMA002 fuzzy match (typo)
+PASS  W2-7  404 (exp 404)    15.6 ms  WMA002 unrecognised item
+PASS  W2-8  400 (exp 400)    12.7 ms  WMA002 location without postcode
+
+Household journey case-journey-1792400056
+PASS  next collection 2026-10-20 ['General waste', 'Garden organics'], pizza box -> RECYCLING, footprint 314.95 kg CO2-e
+
+Response time over 50 requests per service (Part A QoS upper bound)
+PASS  wma001  mean   11.9 ms  p95   15.9 ms  max   18.3 ms  (QoS <= 3 s)
+PASS  ea01    mean   12.6 ms  p95   15.0 ms  max   18.6 ms  (QoS <= 5 s)
+PASS  wma002  mean   14.3 ms  p95   16.9 ms  max   18.1 ms  (QoS <= 3 s)
+
+27/27 checks passed

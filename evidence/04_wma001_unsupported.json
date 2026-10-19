@@ -1,0 +1,9 @@
+{
+    "case_id": "case-ea5bf210ef31",
+    "status": "UNSUPPORTED_LOCATION",
+    "notification": {
+        "type": "WarningNotif",
+        "message": "Schedule unavailable for this location.",
+        "reason": "Postcode is valid but is outside the authority's collection area."
+    }
+}

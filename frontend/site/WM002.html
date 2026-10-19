@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetZero Hub – Recycling and Waste Sorting</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+ <div class="page">
+ <div class="login-container">
+
+        <!-- Logo -->
+        <div class="brand-logo">
+            <center><img src="img/logo.png" alt="Company Logo" height="100"></center>
+        </div>
+
+        <!-- Content Area -->
+        <div class="login-content">
+            <h2>Recycling and Waste Sorting</h2>
+            <p class="subtitle">Not sure which bin? Just ask.</p>
+
+            <!-- WMA002: item name/description + location (Part A inputs) -->
+            <form id="sortForm" autocomplete="off">
+                <div class="form-grid">
+                    <div class="full">
+                        <label for="item">What do you want to throw away?</label>
+                        <input type="text" id="item" placeholder="e.g. pizza box, old AA battery, banana peel" required>
+                    </div>
+                    <div class="full">
+                        <label for="location">Your postcode</label>
+                        <input type="text" id="location" value="2500" required>
+                    </div>
+                </div>
+                <div class="examples">
+                    <button type="button" class="chip-btn" data-i="plastic bottle" data-l="2500">plastic bottle</button>
+                    <button type="button" class="chip-btn" data-i="banana peel" data-l="2500">banana peel @ 2500</button>
+                    <button type="button" class="chip-btn" data-i="banana peel" data-l="2148">banana peel @ 2148</button>
+                    <button type="button" class="chip-btn" data-i="old AA battery" data-l="2519">old AA battery</button>
+                    <button type="button" class="chip-btn" data-i="cardbord box" data-l="2500">cardbord box (typo)</button>
+                    <button type="button" class="chip-btn" data-i="mattress" data-l="2150">mattress</button>
+                </div>
+                <button type="submit" class="submit-btn" id="go">Find the right bin</button>
+            </form>
+
+            <div class="result" id="result"></div>
+
+            <!-- Back navigation link styled identically to a primary button -->
+            <a href="homepage.html" class="back-link">← Change Service Selection</a>
+        </div>
+    </div>
+ </div>
+
+    <script src="app.js"></script>
+    <script>
+        const COLOR = { GENERAL_WASTE: "red", RECYCLING: "yellow", GARDEN_ORGANICS: "green", FOOD_ORGANICS: "green",
+                        CONTAINER_DEPOSIT: "blue", SOFT_PLASTICS: "purple" };
+        const $ = id => document.getElementById(id);
+
+        async function sort(item, location) {
+            Hub.setBusy($("go"), true, "Find the right bin");
+            const r = await Hub.api("POST", "/wma002/sort", { item, location });
+            Hub.setBusy($("go"), false, "Find the right bin");
+            const d = r.data || {};
+
+            if (r.ok) {
+                let h = `<div class="card ok"><h3><span class="bin ${COLOR[d.category] || "grey"}">${Hub.esc(d.proposedDisposal)}</span></h3>
+                    <p>${Hub.esc(d.disposalMethod)}</p>
+                    <div class="hint">“${Hub.esc(d.item)}” matched <b>${Hub.esc(d.matchedItem)}</b> (confidence ${Math.round(d.matchConfidence * 100)}%) ·
+                    ${Hub.esc(d.location.council || "postcode " + d.location.postcode)}, ${Hub.esc(d.location.rules)}</div></div>`;
+                h += `<div class="card"><h3>How to dispose of it</h3><ul>` + d.instructions.map(i => `<li>${Hub.esc(i)}</li>`).join("") + `</ul></div>`;
+                if (d.specialInstructions.length)
+                    h += `<div class="card warn"><h3>⚠ Special instructions</h3><ul>` + d.specialInstructions.map(i => `<li>${Hub.esc(i)}</li>`).join("") + `</ul></div>`;
+                $("result").innerHTML = h + `<div class="hint">${Hub.esc(d.data_note)}</div>` + Hub.meta(r);
+            } else if (d.status === "ITEM_NOT_RECOGNISED") {
+                const s = (d.suggestions || []).map(x => `<button type="button" class="chip-btn sugg">${Hub.esc(x)}</button>`).join(" ");
+                $("result").innerHTML = `<div class="card warn"><h3>Item not recognised</h3>${Hub.esc(d.message)}
+                    ${s ? `<div class="examples" style="margin-top:10px">Did you mean: ${s}</div>` : ""}</div>` + Hub.meta(r);
+                document.querySelectorAll(".sugg").forEach(b => b.addEventListener("click", () => { $("item").value = b.textContent; sort(b.textContent, $("location").value); }));
+            } else if (d.message) {
+                $("result").innerHTML = `<div class="card err"><h3>Please check your input</h3>${Hub.esc(d.message)}</div>` + Hub.meta(r);
+            } else {
+                $("result").innerHTML = `<div class="card err"><h3>Request failed</h3>No answer from WMA002</div>` + Hub.meta(r);
+            }
+        }
+
+        document.querySelectorAll(".examples .chip-btn").forEach(b => b.addEventListener("click", () => {
+            $("item").value = b.dataset.i; $("location").value = b.dataset.l; sort(b.dataset.i, b.dataset.l);
+        }));
+        $("sortForm").addEventListener("submit", e => { e.preventDefault(); sort($("item").value, $("location").value); });
+    </script>
+</body>
+</html>

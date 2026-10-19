@@ -1,0 +1,35 @@
+$ cat /etc/os-release | head -2
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NAME="Ubuntu"
+
+$ uname -r
+6.18.40.1-microsoft-standard-WSL2
+
+$ docker version --format '{{.Server.Version}}'
+29.9.1
+
+$ docker compose version
+Docker Compose version v5.6.0
+
+$ docker images netzero/*
+REPOSITORY                TAG       SIZE
+netzero/frontend          1.0       73.8MB
+netzero/wma002-sorting    1.0       198MB
+netzero/ea01-carbon       1.0       198MB
+netzero/wma001-schedule   1.0       198MB
+
+$ docker compose ps
+NAME                            IMAGE                         STATUS                    PORTS
+netzero-hub-ea01-carbon-1       netzero/ea01-carbon:1.0       Up 17 seconds (healthy)   0.0.0.0:8002->8000/tcp, [::]:8002->8000/tcp
+netzero-hub-frontend-1          netzero/frontend:1.0          Up 16 seconds (healthy)   80/tcp
+netzero-hub-gateway-1           nginx:1.27-alpine             Up 11 seconds             0.0.0.0:8080->80/tcp, [::]:8080->80/tcp
+netzero-hub-wma001-schedule-1   netzero/wma001-schedule:1.0   Up 17 seconds (healthy)   0.0.0.0:8001->8000/tcp, [::]:8001->8000/tcp
+netzero-hub-wma002-sorting-1    netzero/wma002-sorting:1.0    Up 17 seconds (healthy)   0.0.0.0:8003->8000/tcp, [::]:8003->8000/tcp
+
+$ docker network inspect netzero-hub_netzero (containers)
+netzero-hub-frontend-1  172.18.0.5/16
+netzero-hub-wma001-schedule-1  172.18.0.4/16
+netzero-hub-wma002-sorting-1  172.18.0.3/16
+netzero-hub-gateway-1  172.18.0.6/16
+netzero-hub-ea01-carbon-1  172.18.0.2/16
+

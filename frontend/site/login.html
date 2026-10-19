@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetZero Hub – Sign in</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="login-wrapper">
+        
+        <!--Logo-->
+        <div class="brand-logo">
+            <img src="img/logo.png" alt="Company Logo">
+        </div>
+
+        <!-- Main Login Container -->
+        <div class="login-container">
+            <h2>LOGIN</h2>
+            <p class="subtitle">Please enter your details to sign in</p>
+
+            <form class="login-form" id="loginForm" autocomplete="off">
+                <!-- Email-->
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required />
+                </div>
+
+                <!-- Password-->
+                <div class="input-group">
+                    <div class="password-label-row">
+                        <label for="password">Password</label>
+                        <a href="#" class="forgot-pass">Forgot password?</a>
+                    </div>
+                    <input type="password" id="password" placeholder="Enter your password" required />
+                </div>
+
+                <!-- Remember Me-->
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me for 30 days</label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Sign In</button>
+            </form>
+
+            <!-- Footer Links -->
+            <p class="signup-text">Don't have an account? <a href="#">Sign up for free</a></p>
+            <p class="hint" style="text-align:center;margin-top:10px">Prototype sign-in: the email is used as your user id; the password is not checked.</p>
+        </div>
+
+    </div>
+    <script>
+        // Prototype sign-in (no identity service yet): remember the user and start a new case id.
+        document.getElementById('loginForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            try {
+                sessionStorage.setItem('nzh_user', document.getElementById('email').value.trim().toLowerCase());
+                sessionStorage.removeItem('nzh_case');
+            } catch (err) {}
+            window.location.href = 'homepage.html';
+        });
+    </script>
+</body>
+</html>
